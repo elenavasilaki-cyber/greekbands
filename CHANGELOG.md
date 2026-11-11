@@ -1,1 +1,2 @@
 - 2026-10-13: initial import, 1694 bands, 386 with links
+- 2026-11-11: checked 60, new bands 0, removed 0, added links 61
