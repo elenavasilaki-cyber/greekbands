@@ -1,0 +1,40 @@
+name: Discogs sync
+
+on:
+  schedule:
+    - cron: "30 1 * * *"   # every day at 01:30 UTC (03:30 Athens), before the daily scan
+  workflow_dispatch:
+    inputs:
+      max_bands:
+        description: "How many Discogs records to read"
+        default: "150"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Read Discogs records
+        env:
+          DISCOGS_TOKEN: ${{ secrets.DISCOGS_TOKEN }}
+        run: python3 scripts/discogs_sync.py "${{ github.event.inputs.max_bands || '150' }}"
+      - name: Commit and push
+        run: |
+          git config user.name "Discogs sync"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data CHANGELOG.md
+          if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
+          git commit -m "Discogs sync $(date -u +%F)"
+          git pull --rebase origin main
+          git push origin main

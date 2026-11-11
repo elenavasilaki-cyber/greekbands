@@ -33,6 +33,11 @@ For each band, one WebSearch: `<Name> band Greece` with `allowed_domains`
 - Record every band you searched in `checked`, even with nothing found, so it is not repeated.
 - Rock bands rarely have a Metal Archives page; Discogs is their main source.
 
+## 2b. Discogs records are read automatically
+A GitHub Action (`.github/workflows/discogs-sync.yml`, script `scripts/discogs_sync.py`) reads the Discogs
+record of every band with a `dc` link each night and fills official links and the city. So in step 2 just
+make sure every confirmed Discogs artist URL is saved as `dc`; the Action does the rest the next night.
+
 ## 3. Read Discogs records (only if api.discogs.com can be fetched — if WebFetch refuses it as not on the
 allowlist, skip this step for the day; a Discogs artist URL from step 2 is still kept as the `dc` link) (`discogs_read`, plus any new Discogs URLs from step 2)
 WebFetch `https://api.discogs.com/artists/<id>` with the prompt: "Output exactly: line 1 = name;
