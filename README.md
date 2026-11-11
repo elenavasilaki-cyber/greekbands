@@ -14,3 +14,5 @@ Not yet human-verified; please report mistakes to info@wtbuzz.net.
 
 Sources: Spirit of Metal (Greece band index), Wikipedia (de) list of Greek metal bands,
 Encyclopaedia Metallum, Discogs.
+
+The daily scan runs every morning (about 04:30 Athens time) and follows `DAILY_SCAN.md`.
