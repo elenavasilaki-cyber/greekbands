@@ -52,7 +52,14 @@ def main():
         while len(row) > 8 and row[-1] == "":
             row.pop()
         rows.append(row)
+    cpath = os.path.join(DATA, "cities.json")
+    coords = json.load(open(cpath, encoding="utf-8")) if os.path.exists(cpath) else {}
+    used = sorted({b.get("city") for b in bands if b.get("city")})
+    missing = [c for c in used if c not in coords]
+    if missing:
+        print("cities without coordinates (add them to data/cities.json):", ", ".join(missing))
     finder = {"updated": db.get("updated", ""), "count": len(rows),
+              "cities": {c: coords[c] for c in used if c in coords},
               "with_links": sum(1 for b in bands if any(b.get(k) for k in LINK_KEYS)),
               "fields": fields, "rows": rows}
     with open(os.path.join(DATA, "finder.json"), "w", encoding="utf-8") as f:

@@ -11,6 +11,9 @@ results.json format (every list may be empty):
      "dc": "https://www.discogs.com/artist/3617954",                     # "" if none confirmed
      "dc_links_read": true,          # true only if you read the Discogs record and it names Greece
      "links": {"web": "", "fb": "", "yt": "", "ig": "", "bc": "", "sp": ""},  # only from that record
+     "media": {"sp": "", "yt": ""},  # Spotify / YouTube confirmed by step 3b (album match / official channel or video)
+     "media_note": "e.g. 'Spotify: album X matches MA; YouTube: official video Y'",
+     "city": "", "city_source": "",  # city or town in Greece, only when a source states it (Discogs profile, Bandcamp location, band bio)
      "note": "short reason, e.g. 'name shared by 3 bands, skipped'"}
   ],
   "new_bands": [{"name": "Band", "genre": "Black Metal", "som": "https://www.spirit-of-metal.com/en/band/Band"}],
@@ -92,6 +95,17 @@ def main():
                 u = clean_url((c.get("links") or {}).get(k), k)
                 if u and u != b.get(k):
                     b[k] = u; log.append(f"+{k} {b['name']}")
+        for k in ("sp", "yt"):
+            u = clean_url((c.get("media") or {}).get(k), k)
+            if u and not b.get(k):
+                b[k] = u; log.append(f"+{k} {b['name']}")
+        if (c.get("media") or {}) and c.get("media_note"):
+            add_note(b, c["media_note"])
+        city = (c.get("city") or "").strip()
+        if city and c.get("city_source") and not b.get("city"):
+            b["city"] = city; b["city_verified"] = True
+            add_note(b, f"City from {c['city_source']}")
+            log.append(f"+city {b['name']}")
         add_note(b, c.get("note", ""))
 
     known = {norm(b["name"]) for b in db["bands"]}

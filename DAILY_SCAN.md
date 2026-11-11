@@ -35,8 +35,11 @@ For each band, one WebSearch: `<Name> band Greece` with `allowed_domains`
 
 ## 3. Read Discogs records (`discogs_read`, plus any new Discogs URLs from step 2)
 WebFetch `https://api.discogs.com/artists/<id>` with the prompt: "Output exactly: line 1 = name;
-line 2 = GREEK if the profile text mentions Greece/Greek/Athens/Thessaloniki else NOT-STATED; then
-every URL in the urls array, one per line, copied character-for-character."
+line 2 = GREEK if the profile text mentions Greece/Greek/Athens/Thessaloniki else NOT-STATED; line 3 =
+the Greek city or town the profile says the band is from, or NONE; then every URL in the urls array, one
+per line, copied character-for-character."
+- If line 3 names a city, put it in `city` with `city_source: "Discogs profile"` (English spelling, e.g.
+  Athens, Thessaloniki, Patras, Heraklion).
 - Only if line 2 says GREEK (or the name/discography leaves no doubt) set `dc_links_read: true` and fill
   `links`: official site → `web`, facebook.com → `fb`, youtube.com → `yt`, instagram.com profile
   (not `/p/` posts) → `ig`, bandcamp.com → `bc`, open.spotify.com/artist → `sp`.
@@ -55,7 +58,15 @@ every URL in the urls array, one per line, copied character-for-character."
   Prefer the band's own channel (result titled "<Name> - YouTube" or "<Name> Official - YouTube").
   Otherwise take one video whose title is "<Name> - <song> (Official Video / Lyric Video / Audio)" for a
   song or album the band released. Never a fan upload, live bootleg, or a same-named other artist.
-- Put what you find in `checked[].links` with a `note` saying which album or video confirmed it.
+- Put what you find in `checked[].media` (`{"sp": ..., "yt": ...}`) with a `media_note` saying which album or
+  video confirmed it. (`links` is only for links read from a Discogs record.)
+
+## 3c. Cities (for the map)
+For bands with a `bc` link and no city: WebFetch the Bandcamp page with the prompt "Give only the location
+line under the band name (e.g. 'Athens, Greece') or NONE." If it names a Greek city or town, put it in
+`city` with `city_source: "Bandcamp location"`. Never guess a city from a label's location or a member's
+other band. Every city used must be in `data/cities.json` (name → [lat, lng]); `build.py` prints any
+missing one — add it with coordinates from its Wikipedia page before committing.
 
 ## 4. Re-check (`recheck`)
 - Bands with `dc`: re-read the Discogs record. If a link we stored is no longer listed there, or the
