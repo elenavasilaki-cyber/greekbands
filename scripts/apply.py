@@ -11,7 +11,7 @@ results.json format (every list may be empty):
      "dc": "https://www.discogs.com/artist/3617954",                     # "" if none confirmed
      "dc_links_read": true,          # true only if you read the Discogs record and it names Greece
      "links": {"web": "", "fb": "", "yt": "", "ig": "", "bc": "", "sp": ""},  # only from that record
-     "media": {"sp": "", "yt": ""},  # Spotify / YouTube confirmed by step 3b (album match / official channel or video)
+     "media": {"sp": "", "yt": "", "bc": ""},  # Spotify / YouTube (step 3b) and Bandcamp (step 3c), each confirmed
      "media_note": "e.g. 'Spotify: album X matches MA; YouTube: official video Y'",
      "city": "", "city_source": "",  # city or town in Greece, only when a source states it (Discogs profile, Bandcamp location, band bio)
      "note": "short reason, e.g. 'name shared by 3 bands, skipped'"}
@@ -95,7 +95,7 @@ def main():
                 u = clean_url((c.get("links") or {}).get(k), k)
                 if u and u != b.get(k):
                     b[k] = u; log.append(f"+{k} {b['name']}")
-        for k in ("sp", "yt"):
+        for k in ("sp", "yt", "bc"):
             u = clean_url((c.get("media") or {}).get(k), k)
             if u and not b.get(k):
                 b[k] = u; log.append(f"+{k} {b['name']}")

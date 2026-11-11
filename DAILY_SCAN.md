@@ -33,7 +33,8 @@ For each band, one WebSearch: `<Name> band Greece` with `allowed_domains`
 - Record every band you searched in `checked`, even with nothing found, so it is not repeated.
 - Rock bands rarely have a Metal Archives page; Discogs is their main source.
 
-## 3. Read Discogs records (`discogs_read`, plus any new Discogs URLs from step 2)
+## 3. Read Discogs records (only if api.discogs.com can be fetched — if WebFetch refuses it as not on the
+allowlist, skip this step for the day; a Discogs artist URL from step 2 is still kept as the `dc` link) (`discogs_read`, plus any new Discogs URLs from step 2)
 WebFetch `https://api.discogs.com/artists/<id>` with the prompt: "Output exactly: line 1 = name;
 line 2 = GREEK if the profile text mentions Greece/Greek/Athens/Thessaloniki else NOT-STATED; line 3 =
 the Greek city or town the profile says the band is from, or NONE; then every URL in the urls array, one
@@ -61,12 +62,17 @@ per line, copied character-for-character."
 - Put what you find in `checked[].media` (`{"sp": ..., "yt": ...}`) with a `media_note` saying which album or
   video confirmed it. (`links` is only for links read from a Discogs record.)
 
-## 3c. Cities (for the map)
-For bands with a `bc` link and no city: WebFetch the Bandcamp page with the prompt "Give only the location
-line under the band name (e.g. 'Athens, Greece') or NONE." If it names a Greek city or town, put it in
-`city` with `city_source: "Bandcamp location"`. Never guess a city from a label's location or a member's
-other band. Every city used must be in `data/cities.json` (name → [lat, lng]); `build.py` prints any
-missing one — add it with coordinates from its Wikipedia page before committing.
+## 3c. Bandcamp and cities (for the map) — about 25 bands a day
+Bands that have `ma` or `dc` but no `bc` and no `city` (and bands with `bc` but no city):
+1. One WebSearch `<Name> bandcamp` with `allowed_domains ["bandcamp.com"]`. Take only the band's own
+   page (`https://<something>.bandcamp.com` whose releases are "by <Name>"), not a label's page.
+2. WebFetch one album page from that result with the prompt "Give only: artist name | the location line
+   shown under the artist name in the sidebar (e.g. 'Athens, Greece') or NONE".
+3. Only if the location says Greece: put `https://<something>.bandcamp.com` in `media.bc`, and if it names a
+   city or town put it in `city` (English spelling, e.g. Αθήνα → Athens) with
+   `city_source: "Bandcamp location"`. A location in another country means it is a different band: skip.
+Every city used must be in `data/cities.json` (name → [lat, lng]); `build.py` prints any missing one —
+add it with coordinates from its Wikipedia page before committing. Never guess a city.
 
 ## 4. Re-check (`recheck`)
 - Bands with `dc`: re-read the Discogs record. If a link we stored is no longer listed there, or the
