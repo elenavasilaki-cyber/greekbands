@@ -45,9 +45,10 @@
    "dc_links_read": false,
    "som": "https://www.spirit-of-metal.com/en/band/0_Zone",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Death Thrash. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Death Thrash. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Discogs profile does not name Greece; its links were not used",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "12southernnorth",
@@ -56,22 +57,23 @@
    "genre": "Doom Black",
    "family": "Black",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Kalamata",
+   "city_verified": true,
    "ma": "",
    "web": "",
-   "bc": "",
+   "bc": "https://12southernnorth.bandcamp.com",
    "sp": "",
-   "fb": "",
-   "yt": "",
+   "fb": "https://www.facebook.com/halfsouthernnorth",
+   "yt": "https://www.youtube.com/channel/UCDPKayqOIPj6i5lDczL4rBA",
    "ig": "",
    "dc": "https://www.discogs.com/artist/5263761",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/1-2_Southern_North",
    "sources": "Spirit of Metal; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Doom Black. Discogs artist page found by search; its links not yet read",
+   "notes": "Genre as listed by Spirit of Metal: Doom Black. Discogs artist page found by search; its links not yet read. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "1000dead",
@@ -119,7 +121,8 @@
    "sources": "Spirit of Metal; Discogs",
    "notes": "Genre from curated list: Stoner Rock. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece; Spotify: albums Repeated Exposure To..., Youth of Dissent, Vultures, Super Van Vacation match Discogs; YouTube: band channel \"1000mods\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "1033",
@@ -179,19 +182,20 @@
    "city": "Athens",
    "city_verified": true,
    "ma": "",
-   "web": "",
+   "web": "https://www.4bitten.com",
    "bc": "https://4bitten.bandcamp.com",
    "sp": "",
    "fb": "",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/3579034",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/4Bitten",
    "sources": "Spirit of Metal; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Heavy Rock. Discogs artist page found by search; its links not yet read. Bandcamp page location in Greece. City from Bandcamp location",
+   "notes": "Genre as listed by Spirit of Metal: Heavy Rock. Discogs artist page found by search; its links not yet read. Bandcamp page location in Greece. City from Bandcamp location. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "acrackintime",
@@ -230,16 +234,17 @@
    "web": "",
    "bc": "https://adiademofdeadstars.bandcamp.com",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/ADiademofDeadStars",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/4042955",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/A_Diadem_Of_Dead_Stars",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Atmospheric Black. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location",
+   "notes": "Genre as listed by Spirit of Metal: Atmospheric Black. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "ahellishdigest",
@@ -302,16 +307,17 @@
    "web": "",
    "bc": "",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/aasgard.gr/timeline",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/2199488",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Aasgard",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Black Metal. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Black Metal. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "absense",
@@ -368,22 +374,23 @@
    "genre": "Brutal Death",
    "family": "Death & Grind",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Athens",
+   "city_verified": true,
    "ma": "https://www.metal-archives.com/bands/Abnormal_Inhumane/3540338447",
    "web": "",
    "bc": "https://abnormalinhumaneofficial.bandcamp.com",
    "sp": "",
-   "fb": "",
-   "yt": "",
+   "fb": "https://www.facebook.com/abnormalinhumaneofficial",
+   "yt": "https://www.youtube.com/user/abnormalinhumaneofcl",
    "ig": "",
    "dc": "https://www.discogs.com/artist/2662958",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Abnormal_Inhumane",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Brutal Death. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece",
+   "notes": "Genre as listed by Spirit of Metal: Brutal Death. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "aboveusthewaves",
@@ -398,16 +405,17 @@
    "web": "",
    "bc": "https://autw.bandcamp.com",
    "sp": "",
-   "fb": "",
-   "yt": "",
+   "fb": "https://web.facebook.com/autwband",
+   "yt": "https://www.youtube.com/user/AUTWBand",
    "ig": "",
    "dc": "https://www.discogs.com/artist/6523641",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Above_Us_The_Waves",
    "sources": "Spirit of Metal; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Metalcore. Discogs artist page found by search; its links not yet read. Bandcamp page location in Greece. City from Bandcamp location",
+   "notes": "Genre as listed by Spirit of Metal: Metalcore. Discogs artist page found by search; its links not yet read. Bandcamp page location in Greece. City from Bandcamp location. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "absenceofdawn",
@@ -584,22 +592,23 @@
    "genre": "Black Metal",
    "family": "Black",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Athens",
+   "city_verified": true,
    "ma": "https://www.metal-archives.com/bands/Abyssgale/70762",
    "web": "",
    "bc": "https://abyssgale-official.bandcamp.com",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/pages/Abyssgale-official/431587126922333",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/2497983",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Abyssgale",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Black Metal. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece",
+   "notes": "Genre as listed by Spirit of Metal: Black Metal. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "abyssus",
@@ -686,16 +695,17 @@
    "web": "",
    "bc": "",
    "sp": "",
-   "fb": "",
-   "yt": "",
+   "fb": "https://www.facebook.com/AcepticGoitre",
+   "yt": "https://www.youtube.com/user/acepticgoitre",
    "ig": "",
    "dc": "https://www.discogs.com/artist/4161340",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Aceptic_Goitre",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Brutal Death. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Brutal Death. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "aceticvoice",
@@ -704,22 +714,23 @@
    "genre": "Thrash Metal",
    "family": "Thrash & Speed",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Thessaloniki",
+   "city_verified": true,
    "ma": "https://www.metal-archives.com/bands/Acetic_Voice/66239",
    "web": "",
    "bc": "",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/acetic.voice",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/1435543",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Acetic_Voice",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Thrash Metal. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Thrash Metal. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "achelous",
@@ -743,7 +754,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Epic Heavy Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Macedon, Northern Winds match Discogs",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "acherontas",
@@ -767,7 +779,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify album Vamachara matches Metal Archives; YouTube: YouTube artist channel",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "acidbabyjesus",
@@ -780,18 +793,19 @@
    "city_verified": false,
    "ma": "",
    "web": "",
-   "bc": "",
+   "bc": "https://acidbabyjesus.bandcamp.com",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/acidbabyjesus",
    "yt": "",
-   "ig": "",
+   "ig": "https://www.instagram.com/acidbabyjesus",
    "dc": "https://www.discogs.com/artist/2256808",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "",
    "sources": "Discogs",
-   "notes": "Genre from curated list: Garage Psych. City from curated list (not yet checked against a source). Discogs artist page found by search; its links not yet read",
+   "notes": "Genre from curated list: Garage Psych. City from curated list (not yet checked against a source). Discogs artist page found by search; its links not yet read. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "aciddeath",
@@ -815,7 +829,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Progressive Death / Thrash Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Primal Energies, Random's Manifest match Metal Archives",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "acidmammoth",
@@ -827,19 +842,20 @@
    "city": "Athens",
    "city_verified": true,
    "ma": "https://www.metal-archives.com/bands/Acid_Mammoth/3540432370",
-   "web": "",
+   "web": "https://www.acidmammoth.com",
    "bc": "https://acidmammoth.bandcamp.com",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/acidmammoth",
    "yt": "",
-   "ig": "",
+   "ig": "https://www.instagram.com/acidmammoth",
    "dc": "https://www.discogs.com/artist/7559379",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Acid_Mammoth",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Stoner Doom. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location",
+   "notes": "Genre as listed by Spirit of Metal: Stoner Doom. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "acidrain",
@@ -911,7 +927,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "adastra",
@@ -998,16 +1015,17 @@
    "web": "",
    "bc": "https://adventumdiaboli.bandcamp.com",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/pages/Adventum-Diaboli/440994009275035",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/3916828",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Adventum_Diaboli",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Black Metal. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location",
+   "notes": "Genre as listed by Spirit of Metal: Black Metal. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "adyton",
@@ -1079,7 +1097,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Avant-garde Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Hypnosophy, Extance match Metal Archives",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "aeolianfire",
@@ -1190,16 +1209,17 @@
    "web": "",
    "bc": "https://aeonsinsolitude.bandcamp.com",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/aeonsinsolitude",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/7673568",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Aeons_In_Solitude",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Gothic Doom. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location",
+   "notes": "Genre as listed by Spirit of Metal: Gothic Doom. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "aeonsofhate",
@@ -1221,9 +1241,10 @@
    "dc_links_read": false,
    "som": "https://www.spirit-of-metal.com/en/band/Aeons_Of_Hate",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Death Thrash. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location",
+   "notes": "Genre as listed by Spirit of Metal: Death Thrash. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location. Discogs profile does not name Greece; its links were not used",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "aetherian",
@@ -1238,16 +1259,17 @@
    "web": "",
    "bc": "https://aetherianband.bandcamp.com",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/Aetherianband",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/5085327",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Aetherian",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Melodic Death. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location",
+   "notes": "Genre as listed by Spirit of Metal: Melodic Death. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "aethersin",
@@ -1379,19 +1401,20 @@
    "city": "Athens",
    "city_verified": true,
    "ma": "https://www.metal-archives.com/bands/Afterblood/3540355892",
-   "web": "",
+   "web": "https://afterblood.com",
    "bc": "https://afterblood.bandcamp.com",
    "sp": "",
-   "fb": "",
-   "yt": "",
+   "fb": "https://www.facebook.com/afterblood",
+   "yt": "https://www.youtube.com/user/AfterBloodOfficial",
    "ig": "",
    "dc": "https://www.discogs.com/artist/5704216",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/AfterBlood",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Melodic Death. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location",
+   "notes": "Genre as listed by Spirit of Metal: Melodic Death. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "afterimage",
@@ -1461,9 +1484,10 @@
    "dc_links_read": false,
    "som": "https://www.spirit-of-metal.com/en/band/Agarthia",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Black Metal. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Black Metal. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Discogs profile does not name Greece; its links were not used",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "agatus",
@@ -1550,16 +1574,17 @@
    "web": "",
    "bc": "https://agnesvein.bandcamp.com",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/agnesveinband",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/2987607",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Agnes_Vein",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Doom Black. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location",
+   "notes": "Genre as listed by Spirit of Metal: Doom Black. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "agnosia",
@@ -1688,8 +1713,8 @@
    "genre": "Death Metal",
    "family": "Death & Grind",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Athens",
+   "city_verified": true,
    "ma": "https://www.metal-archives.com/bands/Aimoptysi/4188",
    "web": "",
    "bc": "",
@@ -1698,12 +1723,13 @@
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/3016048",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Aimoptysi",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Death Metal. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Death Metal. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. City from Discogs profile",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "airgedlamh",
@@ -1838,16 +1864,17 @@
    "web": "",
    "bc": "https://akrotheism.bandcamp.com",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/Akrotheism",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/3723032",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Akrotheism",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Black Metal. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location",
+   "notes": "Genre as listed by Spirit of Metal: Black Metal. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "alastor",
@@ -1967,7 +1994,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Post-Metal / Sludge. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Omonoia, Commotion match Discogs",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "almightysathanas",
@@ -2198,16 +2226,17 @@
    "web": "",
    "bc": "",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/AmongRuins",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/5327573",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Among_Ruins",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Melodic Death. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Melodic Death. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "anasastaxth",
@@ -2582,16 +2611,17 @@
    "web": "",
    "bc": "",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/Anti-Flesh-Official-294824533881165",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/4562458",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Anti-Flesh",
    "sources": "Spirit of Metal; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Black Metal. Discogs artist page found by search; its links not yet read",
+   "notes": "Genre as listed by Spirit of Metal: Black Metal. Discogs artist page found by search; its links not yet read. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "anticreation",
@@ -4223,7 +4253,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Epic Heavy Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Codex Epicus, To Death and Beyond match Discogs; YouTube: official video \"Poisoned Well\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "bazooka",
@@ -4727,7 +4758,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Thrash Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Ear Piercing Thrash, Tormenting the Innocent match Metal Archives; YouTube: official video \"Citizen... Down!\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "biotoxicwarfare",
@@ -5015,7 +5047,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Heavy Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify album Horrors From The Void matches Metal Archives",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "blackswordthunderattack",
@@ -5975,7 +6008,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Black / Death Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify album Incendium matches Metal Archives; YouTube: label premiere (Transcending Obscurity)",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "buriedbeforeidie",
@@ -7007,7 +7041,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Experimental / Dark Classical. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums The Scarlet Queen, The Undivided Light match Metal Archives",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "chaoticsymmetry",
@@ -7760,22 +7795,23 @@
    "genre": "Grindcore",
    "family": "Death & Grind",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Athens",
+   "city_verified": true,
    "ma": "https://www.metal-archives.com/bands/Corrodent/3540440752",
    "web": "",
-   "bc": "",
+   "bc": "https://corrodent.bandcamp.com",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/Corrodent",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/6412256",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Corrodent",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Grindcore. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Grindcore. Metal Archives URL matched from search-result page title; page not opened. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "corruption",
@@ -7880,22 +7916,23 @@
    "genre": "Doom Metal",
    "family": "Doom & Gothic",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Thessaloniki",
+   "city_verified": true,
    "ma": "",
    "web": "",
-   "bc": "",
+   "bc": "https://craang.bandcamp.com",
    "sp": "",
-   "fb": "",
-   "yt": "",
+   "fb": "https://www.facebook.com/Craang",
+   "yt": "https://www.youtube.com/channel/UCqrzGAWVAKTcxIdtRKpoENA",
    "ig": "",
    "dc": "https://www.discogs.com/artist/4060587",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Craang",
    "sources": "Spirit of Metal; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Doom Metal",
+   "notes": "Genre as listed by Spirit of Metal: Doom Metal. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "cracen",
@@ -8072,22 +8109,23 @@
    "genre": "Power Metal",
    "family": "Heavy & Power",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Thessaloniki",
+   "city_verified": true,
    "ma": "https://www.metal-archives.com/bands/Crosswind/91341",
-   "web": "",
+   "web": "https://crosswind.gr",
    "bc": "",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/crosswindmetal",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/3854282",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Crosswind",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Power Metal. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Power Metal. Metal Archives URL matched from search-result page title; page not opened. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "crowdance",
@@ -8288,22 +8326,23 @@
    "genre": "Power Metal",
    "family": "Heavy & Power",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Thessaloniki",
+   "city_verified": true,
    "ma": "https://www.metal-archives.com/bands/Crystal_Tears/11331",
-   "web": "",
+   "web": "https://www.crystaltears-epk.com",
    "bc": "",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/crystaltearsband",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/391750",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Crystal_Tears_(GRC)",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Power Metal. Metal Archives URL matched from search-result page title; page not opened. albums Hellmade, Choirs of Immortal match",
+   "notes": "Genre as listed by Spirit of Metal: Power Metal. Metal Archives URL matched from search-result page title; page not opened. albums Hellmade, Choirs of Immortal match. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "crystalwinds",
@@ -8360,8 +8399,8 @@
    "genre": "Progressive Death",
    "family": "Progressive",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Thessaloniki",
+   "city_verified": true,
    "ma": "https://www.metal-archives.com/bands/Cubical_Sphere/62277",
    "web": "",
    "bc": "",
@@ -8370,12 +8409,13 @@
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/3428790",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Cubical_Sphere",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Progressive Death. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Progressive Death. Metal Archives URL matched from search-result page title; page not opened. City from Discogs profile",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "cultofeibon",
@@ -8390,16 +8430,17 @@
    "web": "",
    "bc": "https://cultofeibon.bandcamp.com",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/Cult-Of-Eibon-636436049821406",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/4999117",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Cult_Of_Eibon",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Black Metal. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location",
+   "notes": "Genre as listed by Spirit of Metal: Black Metal. Metal Archives URL matched from search-result page title; page not opened. Bandcamp page location in Greece. City from Bandcamp location. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "cultoforpist",
@@ -8504,22 +8545,23 @@
    "genre": "Grindcore",
    "family": "Death & Grind",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Thessaloniki",
+   "city_verified": true,
    "ma": "https://www.metal-archives.com/bands/Cut_Your_Throat/3540258617",
-   "web": "",
+   "web": "https://www.diymusic.org/cutyourthroat",
    "bc": "",
    "sp": "",
    "fb": "",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/1703527",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Cut_Your_Throat",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Grindcore. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Grindcore. Metal Archives URL matched from search-result page title; page not opened. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "cyanide4",
@@ -8528,22 +8570,23 @@
    "genre": "Hard Rock",
    "family": "Rock",
    "scene": "rock",
-   "city": "",
-   "city_verified": false,
+   "city": "Athens",
+   "city_verified": true,
    "ma": "",
    "web": "",
    "bc": "",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/Cyanide4",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/2490007",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Cyanide_4",
    "sources": "Spirit of Metal; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Hard Rock",
+   "notes": "Genre as listed by Spirit of Metal: Hard Rock. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "cyborgproject",
@@ -8624,22 +8667,23 @@
    "genre": "Experimental Metal",
    "family": "Experimental & Ambient",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Athens",
+   "city_verified": true,
    "ma": "https://www.metal-archives.com/bands/Dakrya/43671",
-   "web": "",
+   "web": "https://www.dakrya.com",
    "bc": "",
    "sp": "",
-   "fb": "",
-   "yt": "",
+   "fb": "https://www.facebook.com/pages/DAKRYA/47137079653",
+   "yt": "https://www.youtube.com/user/dakryaband",
    "ig": "",
    "dc": "https://www.discogs.com/artist/2083624",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Dakrya",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Experimental Metal. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Experimental Metal. Metal Archives URL matched from search-result page title; page not opened. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "dalasun",
@@ -8781,9 +8825,10 @@
    "dc_links_read": false,
    "som": "https://www.spirit-of-metal.com/en/band/Danger_Angel",
    "sources": "Spirit of Metal; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Hard Rock",
+   "notes": "Genre as listed by Spirit of Metal: Hard Rock. Discogs profile does not name Greece; its links were not used",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "dangercross",
@@ -8820,18 +8865,19 @@
    "city_verified": false,
    "ma": "https://www.metal-archives.com/bands/Darchon/3540347279",
    "web": "",
-   "bc": "",
+   "bc": "https://darchonofficial.bandcamp.com",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/Darchonofficial",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/2779383",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Darchon",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Ambient Black. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Ambient Black. Metal Archives URL matched from search-result page title; page not opened. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "darkaffliction",
@@ -8868,18 +8914,19 @@
    "city_verified": false,
    "ma": "",
    "web": "",
-   "bc": "",
+   "bc": "https://darkawake.bandcamp.com",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/darkawakehellas",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/1257445",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Dark_Awake_(GRC)",
    "sources": "Spirit of Metal; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Dark Ambient",
+   "notes": "Genre as listed by Spirit of Metal: Dark Ambient. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "darkdeceiver",
@@ -9032,22 +9079,23 @@
    "genre": "Heavy Metal",
    "family": "Heavy & Power",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Athens",
+   "city_verified": true,
    "ma": "https://www.metal-archives.com/bands/Dark_Nova/13253",
    "web": "",
    "bc": "",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/DarkNovaBand",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/263897",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Dark_Nova",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Heavy Metal. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Heavy Metal. Metal Archives URL matched from search-result page title; page not opened. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "darkportrait",
@@ -9069,9 +9117,10 @@
    "dc_links_read": false,
    "som": "https://www.spirit-of-metal.com/en/band/Dark_Portrait",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Gothic Black. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Gothic Black. Metal Archives URL matched from search-result page title; page not opened. Discogs profile does not name Greece; its links were not used",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "darkritual",
@@ -9114,12 +9163,13 @@
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/466716",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Dark_Thule",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre as listed by Spirit of Metal: Black Metal. Metal Archives URL matched from search-result page title; page not opened. listed on Metal Archives as Darkthule",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "darktymfristos",
@@ -9228,18 +9278,19 @@
    "city_verified": false,
    "ma": "https://www.metal-archives.com/bands/Darkest_Oath/12703",
    "web": "",
-   "bc": "",
+   "bc": "https://darkestoath.bandcamp.com",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/DarkestOath",
    "yt": "",
-   "ig": "",
+   "ig": "https://www.instagram.com/darkest.oath",
    "dc": "https://www.discogs.com/artist/1305661",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Darkest_Oath",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Black Metal. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Black Metal. Metal Archives URL matched from search-result page title; page not opened. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "darklon",
@@ -9248,22 +9299,23 @@
    "genre": "Power Metal",
    "family": "Heavy & Power",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Athens",
+   "city_verified": true,
    "ma": "https://www.metal-archives.com/bands/Darklon/3540456708",
    "web": "",
    "bc": "",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/DarklonMetal",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/7506500",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Darklon",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Power Metal. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Power Metal. Metal Archives URL matched from search-result page title; page not opened. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "dask",
@@ -9324,18 +9376,19 @@
    "city_verified": false,
    "ma": "https://www.metal-archives.com/bands/Dawn_of_Division/32480",
    "web": "",
-   "bc": "",
+   "bc": "https://dawnofdivision.bandcamp.com",
    "sp": "",
    "fb": "",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/1059840",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Dawn_Of_Division",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Black Metal. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Black Metal. Metal Archives URL matched from search-result page title; page not opened. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-11-11",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "daylightmisery",
@@ -9455,7 +9508,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Death Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Graves of the Archangels, Promulgation of the Fall match Metal Archives",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "deaddawnrising",
@@ -9599,7 +9653,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Death Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify album Necrotic Verses matches Metal Archives",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "deatheternal",
@@ -10341,9 +10396,10 @@
    "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Dephosphorus",
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
-   "notes": "Genre from curated list: Astrogrind / Black / Death Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre from curated list: Astrogrind / Black / Death Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened. Discogs profile does not name Greece; its links were not used",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "depression",
@@ -10775,7 +10831,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Heavy Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "diablery",
@@ -11771,7 +11828,7 @@
    "city": "Thessaloniki",
    "city_verified": false,
    "ma": "https://www.metal-archives.com/bands/Dol_Ammad/6287",
-   "web": "",
+   "web": "https://www.proggnosis.com/Artist/7649",
    "bc": "",
    "sp": "https://open.spotify.com/artist/0KNzvJOFUEtF5VvpEXoGMZ",
    "fb": "",
@@ -11783,7 +11840,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Electronic / Progressive Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify EP Winds of the Sun matches Metal Archives; YouTube: official video \"Astroatlas\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "dolamroth",
@@ -12287,7 +12345,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Thrash Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "drutentus",
@@ -13007,7 +13066,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Black / Death Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Darkness Impenetrable, Scorn Aesthetics match Metal Archives; YouTube: official audio \"Entropy Dynamics\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "embryectomy",
@@ -14351,7 +14411,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Thrash Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify album New War Order matches Metal Archives; YouTube: official video \"Toxic Terror\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "executioner",
@@ -15263,7 +15324,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Power / Heavy Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Immortals, Firewind match Metal Archives",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "flames",
@@ -15275,19 +15337,20 @@
    "city": "Athens",
    "city_verified": false,
    "ma": "https://www.metal-archives.com/bands/Flames/11532",
-   "web": "",
+   "web": "https://www.flames.gr",
    "bc": "",
    "sp": "",
-   "fb": "",
+   "fb": "https://www.facebook.com/flamesmetal",
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/263895",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Flames",
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
-   "notes": "Genre from curated list: Thrash / Speed Metal. City from curated list (not yet checked against a source). Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre from curated list: Thrash / Speed Metal. City from curated list (not yet checked against a source). Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "fleshart",
@@ -15551,7 +15614,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Power / Progressive Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Atlantis, Phoenix Rising match Metal Archives; YouTube: official video \"Disobey\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "foulentity",
@@ -15695,7 +15759,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Progressive Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Perception, A Tribute to Life match Metal Archives; YouTube: official video \"Frequencies\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "fragmentsoul",
@@ -16751,7 +16816,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Stoner Rock. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Coming of Age, Thousand Sons of Sleep match Metal Archives",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "gomgoma",
@@ -17279,7 +17345,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Psychedelic Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Mayhem in Blue, Mannequins match Metal Archives; YouTube: YouTube artist channel",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "hailsteel",
@@ -20039,7 +20106,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Power Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Ash of Eternal Flame, Waiting for the Dawn match Metal Archives; YouTube: band channel \"InnerWish Official\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "innosense",
@@ -20303,7 +20371,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Brutal / Technical Death Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "invocation",
@@ -20903,7 +20972,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Sacrilegious Testament, Magnus Venator match Metal Archives",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "kawir",
@@ -20927,7 +20997,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Pagan Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify album Isotheos matches Metal Archives (Ισόθεος)",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "keadomores",
@@ -22103,7 +22174,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify album The Order matches Metal Archives",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "luckyfuneral",
@@ -22775,7 +22847,8 @@
    "sources": "Spirit of Metal; Discogs",
    "notes": "Genre from curated list: Hard Rock / Heavy Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "marauder",
@@ -23128,14 +23201,15 @@
    "sp": "https://open.spotify.com/artist/7pOLYbnHZTWar9tw4necpm",
    "fb": "https://www.facebook.com/Medieval-Demon-1779967788941585/",
    "yt": "https://www.youtube.com/watch?v=-sCdi9qdMbY",
-   "ig": "",
+   "ig": "https://www.instagram.com/lordapollyon",
    "dc": "https://www.discogs.com/artist/260510",
    "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Medieval_Demon",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify album Medieval Necromancy matches Metal Archives; YouTube: official video \"Ancient Evil in the Woods\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "medusaswrath",
@@ -24394,7 +24468,7 @@
    "scene": "metal",
    "city": "",
    "city_verified": false,
-   "ma": "",
+   "ma": "https://www.metal-archives.com/bands/Mortify/15196",
    "web": "",
    "bc": "",
    "sp": "",
@@ -24402,12 +24476,13 @@
    "yt": "",
    "ig": "",
    "dc": "https://www.discogs.com/artist/665387",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Mortify_(GRC)",
    "sources": "Spirit of Metal; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Black Metal. Discogs artist page found by search; its links not yet read",
+   "notes": "Genre as listed by Spirit of Metal: Black Metal. Discogs artist page found by search; its links not yet read. Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "mortuuscaelum",
@@ -24479,7 +24554,8 @@
    "sources": "Spirit of Metal; Discogs",
    "notes": "Genre from curated list: Progressive Metal / Rock. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece; Spotify: albums Magna Mater, Sigma, Artifacts, Human match Discogs",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "mournblade",
@@ -25007,7 +25083,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify album Praetorians matches Metal Archives",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "naissant",
@@ -25247,7 +25324,8 @@
    "sources": "Spirit of Metal; Discogs",
    "notes": "Genre from curated list: Psychedelic Rock. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "nazarenedeceiver",
@@ -25391,7 +25469,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Scarlet Evil Witching Black, Crossing the Fiery Path match Metal Archives; YouTube: official lyric video \"Inferno\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "necromanticalinvocation",
@@ -26063,7 +26142,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Gothic / Melodic Death Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: album Athenian Echoes matches MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "nighthawks",
@@ -26135,7 +26215,8 @@
    "sources": "Metal Archives; Discogs",
    "notes": "Genre from curated list: Melodic Death Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: albums Abyss Rising, Descent Into Chaos match MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "nightstalker",
@@ -26159,7 +26240,8 @@
    "sources": "Spirit of Metal; Discogs",
    "notes": "Genre from curated list: Stoner / Hard Rock. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece; Spotify: albums Dead Rock Commandos, Use, Return From the Point of No Return match Discogs; YouTube: official video \"Children of the Sun\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "nightsteel",
@@ -26447,7 +26529,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: albums HARPS MMX, En Oria match MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "nocternityenshadowed",
@@ -27047,7 +27130,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Melodic Death / Doom Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: EP Fortress of My Dark Self matches MA; YouTube: official lyric video \"After a Long Time\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "odesofecstasy",
@@ -27287,7 +27371,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Gothic / Doom Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: albums Orama, Aegean Sorrow, Crystal Tears match MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "oncethemedens",
@@ -27455,7 +27540,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: album XV The Devil matches MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "orionsreign",
@@ -27560,8 +27646,8 @@
    "genre": "Power Metal",
    "family": "Heavy & Power",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Thessaloniki",
+   "city_verified": true,
    "ma": "",
    "web": "",
    "bc": "",
@@ -27573,9 +27659,10 @@
    "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Out_Of_The_Lair",
    "sources": "Spirit of Metal; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Power Metal. Official links taken from the band's Discogs artist profile, which names Greece",
+   "notes": "Genre as listed by Spirit of Metal: Power Metal. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "outloud",
@@ -28391,7 +28478,8 @@
    "sources": "Spirit of Metal; Discogs",
    "notes": "Genre from curated list: Stoner Rock. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece; Spotify: albums Loyal to the Pack, Faith in Physics, Vigilante match Discogs",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "plasma",
@@ -29207,7 +29295,8 @@
    "sources": "Spirit of Metal; Discogs",
    "notes": "Genre from curated list: Stoner Rock. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "puterdeus",
@@ -29567,7 +29656,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Black / Thrash Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: albums Temples of Torment, Morbid Blood match MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "rawinsect",
@@ -29879,7 +29969,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Thrash Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "remnantsofflesh",
@@ -30407,7 +30498,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Black / Gothic Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: Spotify albums Pro Xristou, The Heretics match Metal Archives",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "rottingflesh",
@@ -30623,7 +30715,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Speed / Heavy Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: album Beyond Celestial Echoes matches MA; YouTube: official video \"A Tyrannous Revolt\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "sacram",
@@ -30695,7 +30788,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Power Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: album Towers of Gold matches MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "sacrificial",
@@ -31775,7 +31869,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Symphonic Death Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: albums Communion, Titan, Codex Omega match MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "septuagint",
@@ -31895,7 +31990,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: albums Erotomysticism, Death Clan OD match MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "serpentpath",
@@ -32183,7 +32279,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Discogs",
    "notes": "Genre from curated list: Death / Funeral Doom Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "shockabsorber",
@@ -32279,7 +32376,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Technical Death Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "silentbirth",
@@ -33383,7 +33481,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Epic Doom Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: album Touching Infinity matches MA; YouTube: official video \"Epoasis\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "sorry",
@@ -33935,7 +34034,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Heavy Metal / Hard Rock. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "stagnate",
@@ -34127,7 +34227,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Power Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: albums Fire and Blood, Master of War, Dreamruler match MA; YouTube: official video \"Fate of the Beast\"",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "steelwitch",
@@ -34703,7 +34804,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Thrash Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: albums Bloodbath, Division of Blood match MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "suicidalformselite",
@@ -35207,7 +35309,8 @@
    "sources": "Spirit of Metal; Discogs",
    "notes": "Genre from curated list: Progressive Metal / Mathcore. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "tartarus",
@@ -35384,8 +35487,8 @@
    "genre": "Black Metal",
    "family": "Black",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Kastoria",
+   "city_verified": true,
    "ma": "",
    "web": "",
    "bc": "https://templeofkatharsis.bandcamp.com",
@@ -35397,9 +35500,10 @@
    "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Temple_Of_Katharsis",
    "sources": "Spirit of Metal; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Black Metal. Official links taken from the band's Discogs artist profile, which names Greece",
+   "notes": "Genre as listed by Spirit of Metal: Black Metal. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "tenrailcell",
@@ -35888,22 +35992,23 @@
    "genre": "Folk Black",
    "family": "Black",
    "scene": "metal",
-   "city": "",
-   "city_verified": false,
+   "city": "Athens",
+   "city_verified": true,
    "ma": "https://www.metal-archives.com/bands/The_Elysian_Fields/5195",
    "web": "",
-   "bc": "",
+   "bc": "https://theelysianfields.bandcamp.com",
    "sp": "",
-   "fb": "",
-   "yt": "",
+   "fb": "https://www.facebook.com/theelysianfieldsgr",
+   "yt": "https://www.youtube.com/user/theelysianfieldsgree",
    "ig": "",
    "dc": "https://www.discogs.com/artist/875667",
-   "dc_links_read": false,
+   "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/The_Elysian_Fields",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre as listed by Spirit of Metal: Folk Black. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre as listed by Spirit of Metal: Folk Black. Discogs artist page found by search; its links not yet read. Metal Archives URL matched from search-result page title; page not opened. Official links taken from the band's Discogs artist profile, which names Greece. City from Discogs profile",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "enochian",
@@ -36599,7 +36704,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: albums Apollyon, Orgia Daemonicum match MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "thraz",
@@ -36719,7 +36825,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: album Liber Lvcifer II matches MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "thyrathen",
@@ -37631,7 +37738,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Doom Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: albums Never, Change, Familiar Places match MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "unmaskingthebetrayer",
@@ -37725,9 +37833,10 @@
    "dc_links_read": true,
    "som": "https://www.spirit-of-metal.com/en/band/Until_Rain",
    "sources": "Spirit of Metal; Metal Archives; Discogs",
-   "notes": "Genre from curated list: Progressive Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened",
+   "notes": "Genre from curated list: Progressive Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened. Discogs profile does not name Greece; its links were not used",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "unverkalt",
@@ -38039,7 +38148,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: albums Patriarchs of Evil, Walpurgisnacht match MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "vargorder",
@@ -38663,7 +38773,8 @@
    "sources": "Spirit of Metal; Discogs",
    "notes": "Genre from curated list: Psychedelic / Folk Rock. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "violentdefinition",
@@ -39575,7 +39686,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Progressive Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "wavesidlesymmetry",
@@ -40367,7 +40479,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Epic Heavy Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "xpiral",
@@ -40439,7 +40552,8 @@
    "sources": "Spirit of Metal; Metal Archives; Discogs",
    "notes": "Genre from curated list: Black Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: album As the Flame Withers matches MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "yovel",
@@ -40527,7 +40641,7 @@
    "bc": "https://zemial.bandcamp.com",
    "sp": "https://open.spotify.com/artist/2N57VRfupAVQqSpK0Vor45",
    "fb": "https://www.facebook.com/pages/Zemial-Official/199551066758156",
-   "yt": "",
+   "yt": "https://www.youtube.com/user/Vorskaath",
    "ig": "",
    "dc": "https://www.discogs.com/artist/259871",
    "dc_links_read": true,
@@ -40535,7 +40649,8 @@
    "sources": "Spirit of Metal; Wikipedia (de); Metal Archives; Discogs",
    "notes": "Genre from curated list: Avant-garde Black / Thrash Metal. City from curated list (not yet checked against a source). Official links taken from the band's Discogs artist profile, which names Greece. Metal Archives URL matched from search-result page title; page not opened; Spotify: album For the Glory of UR matches MA",
    "checked": "2026-10-13",
-   "added": "2026-10-13"
+   "added": "2026-10-13",
+   "dc_read_on": "2026-11-11"
   },
   {
    "id": "zephyrous",

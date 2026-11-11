@@ -1,3 +1,4 @@
 - 2026-10-13: initial import, 1694 bands, 386 with links
 - 2026-11-11: checked 60, new bands 0, removed 0, added links 61
 - 2026-11-11: checked 26, new bands 0, removed 0, added links 45
+- 2026-11-11: Discogs sync read 115 records (108 name Greece), added 64 links and 18 cities
