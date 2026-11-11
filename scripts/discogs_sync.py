@@ -94,6 +94,7 @@ def main():
     limit = int(sys.argv[1]) if len(sys.argv) > 1 else 150
     token = os.environ.get("DISCOGS_TOKEN", "").strip()
     pause = 1.1 if token else 2.6
+    print("Discogs token:", "connected" if token else "not set (slower rate limit)")
     db = json.load(open(DB, encoding="utf-8"))
     cities = json.load(open(CITIES, encoding="utf-8"))
     today = datetime.date.today().isoformat()
