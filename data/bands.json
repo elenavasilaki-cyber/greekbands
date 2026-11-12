@@ -44341,6 +44341,32 @@
    "added": "2026-11-12",
    "rym": "",
    "lfm": ""
+  },
+  {
+   "id": "gnaal",
+   "name": "Gnaal",
+   "native": "",
+   "genre": "Doom / Heavy Metal",
+   "family": "Doom & Gothic",
+   "scene": "metal",
+   "city": "Rethymno",
+   "city_verified": true,
+   "ma": "",
+   "web": "",
+   "bc": "https://gnaal.bandcamp.com",
+   "sp": "",
+   "fb": "https://www.facebook.com/share/1AA6w7fuCq/",
+   "yt": "https://www.youtube.com/@gnaal-band",
+   "ig": "https://www.instagram.com/gnaal_band",
+   "dc": "",
+   "rym": "",
+   "lfm": "",
+   "dc_links_read": false,
+   "som": "",
+   "sources": "Added by Elena",
+   "notes": "Added by Elena with Bandcamp, Facebook, Instagram and YouTube links; city from Elena and Bandcamp (Rethimno, Greece); genre from Bandcamp tags (doom metal, heavy metal); album Primordial Despair (2026)",
+   "checked": "2026-11-12",
+   "added": "2026-11-12"
   }
  ]
 }

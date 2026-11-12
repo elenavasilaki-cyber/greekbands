@@ -13,3 +13,4 @@
 - 2026-11-12: Fuzzing Nation (already listed) updated by hand: genre and 4 links
 - 2026-11-12: Caelestia updated by hand from caelestia.band (city, genre, 6 links, Metal Archives URL fixed)
 - 2026-11-12: fixed 7 Metal Archives links; pilot web check of 20 unlinked bands: 7 bands got links (Bandcamp/Facebook/Instagram/YouTube), 3 cities
+- 2026-11-12: added Gnaal by hand
