@@ -22,3 +22,4 @@
 - 2026-11-12: SI4 (already listed) updated by hand: genre and 2 links
 - 2026-11-12: SI4 city set to Spata (East Attica)
 - 2026-11-12: Ostracist (already listed) updated by hand
+- 2026-11-12: Hercules (already listed) updated by hand
