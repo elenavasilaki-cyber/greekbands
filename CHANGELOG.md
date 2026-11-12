@@ -19,4 +19,4 @@
 - 2026-11-12: added Retorn by hand
 - 2026-11-12: Typhus (already listed) updated by hand: genre, city, 6 links
 - 2026-11-12: added Reflection Black by hand
-- 2026-11-12: added SI4 by hand
+- 2026-11-12: SI4 (already listed) updated by hand: genre and 2 links
