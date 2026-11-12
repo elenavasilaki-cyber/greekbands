@@ -16,3 +16,4 @@
 - 2026-11-12: added Gnaal by hand
 - 2026-11-12: added Inferahl by hand
 - 2026-11-12: added Infernal Storm
+- 2026-11-12: added Retorn by hand
