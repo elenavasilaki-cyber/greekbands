@@ -4,3 +4,4 @@
 - 2026-11-11: Discogs sync read 115 records (108 name Greece), added 64 links and 18 cities
 - 2026-11-12: checked 153, new bands 0, removed 0, added links 115
 - 2026-11-12: added 2 bands by hand (Entropy Devine, Thy Legacy)
+- 2026-11-12: added 4 bands by hand (End of Dawn, Ascending Olympus, Ecollapse, Veil Omega); Misty Route links updated
