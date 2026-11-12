@@ -81,7 +81,8 @@ Every city used must be in `data/cities.json` (name → [lat, lng]); `build.py` 
 add it with coordinates from its Wikipedia page before committing. Never guess a city.
 
 ## 3d. Rate Your Music and Last.fm — about 30 bands a day
-Bands that have `ma` or `dc` but no `rym` and no `lfm`. Neither site can be fetched from the scan
+Bands that have `ma` or `dc` but no `rym` and no `lfm`, and whose notes do not already say "RYM/Last.fm checked".
+Add `"note": "RYM/Last.fm checked <date>"` to every band you search so it is not repeated. Neither site can be fetched from the scan
 environment, so judge from search-result titles only, as for Metal Archives.
 1. One WebSearch `<Name> band Greece` with `allowed_domains ["rateyourmusic.com","last.fm"]`.
 2. **Rate Your Music**: take `https://rateyourmusic.com/artist/<slug>` only if a result is titled

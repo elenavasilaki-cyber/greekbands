@@ -7,3 +7,4 @@
 - 2026-11-12: added 4 bands by hand (End of Dawn, Ascending Olympus, Ecollapse, Veil Omega); Misty Route links updated
 - 2026-11-12: added Demoncrowned by hand
 - 2026-11-12: checked 146, new bands 0, removed 0, added links 91
+- 2026-11-12: Rate Your Music / Last.fm second batch: searched 150, added links 35 (14 RYM, 21 Last.fm)
