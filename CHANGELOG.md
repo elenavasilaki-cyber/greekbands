@@ -11,3 +11,4 @@
 - 2026-11-12: Rate Your Music / Last.fm third batch: searched 150, added links 63 (30 RYM, 33 Last.fm)
 - 2026-11-12: Rate Your Music / Last.fm final batch: searched 57, added links 38 (20 RYM, 18 Last.fm)
 - 2026-11-12: Fuzzing Nation (already listed) updated by hand: genre and 4 links
+- 2026-11-12: Caelestia updated by hand from caelestia.band (city, genre, 6 links, Metal Archives URL fixed)
