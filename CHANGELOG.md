@@ -10,3 +10,4 @@
 - 2026-11-12: Rate Your Music / Last.fm second batch: searched 150, added links 35 (14 RYM, 21 Last.fm)
 - 2026-11-12: Rate Your Music / Last.fm third batch: searched 150, added links 63 (30 RYM, 33 Last.fm)
 - 2026-11-12: Rate Your Music / Last.fm final batch: searched 57, added links 38 (20 RYM, 18 Last.fm)
+- 2026-11-12: added Fuzzing Nation by hand
