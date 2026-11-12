@@ -44367,6 +44367,32 @@
    "notes": "Added by Elena with Bandcamp, Facebook, Instagram and YouTube links; city from Elena and Bandcamp (Rethimno, Greece); genre from Bandcamp tags (doom metal, heavy metal); album Primordial Despair (2026)",
    "checked": "2026-11-12",
    "added": "2026-11-12"
+  },
+  {
+   "id": "inferahl",
+   "name": "Inferahl",
+   "native": "",
+   "genre": "Black Metal",
+   "family": "Black",
+   "scene": "metal",
+   "city": "",
+   "city_verified": false,
+   "ma": "",
+   "web": "",
+   "bc": "",
+   "sp": "",
+   "fb": "https://www.facebook.com/profile.php?id=100063502209856",
+   "yt": "https://www.youtube.com/@ΠαναγιωτηςΒαββας-γ7ζ",
+   "ig": "",
+   "dc": "",
+   "rym": "",
+   "lfm": "",
+   "dc_links_read": false,
+   "som": "",
+   "sources": "Added by Elena",
+   "notes": "Added by Elena with Facebook and YouTube links. One-man black metal act from Greece by Panos V., started 2014; EP Imperial War (2017) (metalmusicarchives.com)",
+   "checked": "2026-11-12",
+   "added": "2026-11-12"
   }
  ]
 }
