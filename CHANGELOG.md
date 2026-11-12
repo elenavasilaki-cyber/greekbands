@@ -8,3 +8,4 @@
 - 2026-11-12: added Demoncrowned by hand
 - 2026-11-12: checked 146, new bands 0, removed 0, added links 91
 - 2026-11-12: Rate Your Music / Last.fm second batch: searched 150, added links 35 (14 RYM, 21 Last.fm)
+- 2026-11-12: Rate Your Music / Last.fm third batch: searched 150, added links 63 (30 RYM, 33 Last.fm)
