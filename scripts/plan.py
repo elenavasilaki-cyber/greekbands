@@ -5,7 +5,7 @@ Run from the repo root:  python3 scripts/plan.py [confirm_count] [discogs_count]
 import datetime, json, os, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LINK_KEYS = ["ma", "yt", "sp", "fb", "ig", "bc", "web", "dc"]
+LINK_KEYS = ["ma", "yt", "sp", "fb", "ig", "bc", "web", "dc", "rym", "lfm"]
 
 def main():
     n_confirm = int(sys.argv[1]) if len(sys.argv) > 1 else 110

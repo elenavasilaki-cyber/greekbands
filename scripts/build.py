@@ -9,7 +9,7 @@ import csv, json, os, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
-LINK_KEYS = ["ma", "yt", "sp", "fb", "ig", "bc", "web", "dc"]
+LINK_KEYS = ["ma", "yt", "sp", "fb", "ig", "bc", "web", "dc", "rym", "lfm"]
 
 def confidence(b):
     if b.get("dc_links_read") and b.get("ma"): return "high"
@@ -73,7 +73,7 @@ def main():
     with open(os.path.join(DATA, "Bands_Master.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(hdr)
         for b in bands:
-            others = "; ".join(u for u in [b.get("fb"), b.get("yt"), b.get("ig"), b.get("dc"), b.get("som")] if u)
+            others = "; ".join(u for u in [b.get("fb"), b.get("yt"), b.get("ig"), b.get("dc"), b.get("rym"), b.get("lfm"), b.get("som")] if u)
             w.writerow([b["name"], b.get("native",""), "", "Greece", b.get("city",""), "", "", "",
                         "Rock" if b.get("scene") == "rock" else "Metal", norm_genre(b.get("genre")), "", "", "", "",
                         "", "", b.get("ma",""), b.get("web",""), b.get("bc",""), b.get("sp",""), others,

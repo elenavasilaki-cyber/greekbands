@@ -49,7 +49,8 @@ per line, copied character-for-character."
 - Only if line 2 says GREEK (or the name/discography leaves no doubt) set `dc_links_read: true` and fill
   `links`: official site → `web`, facebook.com → `fb`, youtube.com → `yt`, instagram.com profile
   (not `/p/` posts) → `ig`, bandcamp.com → `bc`, open.spotify.com/artist → `sp`.
-- Ignore MySpace, Twitter/X, SoundCloud, Last.fm, Wikipedia, shops, Linktree, a member's personal account.
+- rateyourmusic.com/artist → `rym`, last.fm/music → `lfm`.
+- Ignore MySpace, Twitter/X, SoundCloud, Wikipedia, shops, Linktree, a member's personal account.
 - A Metal Archives URL listed in the record counts as confirming `ma`.
 - Discogs rate-limits fast requests. After an error, wait 60 s (`sleep 60` in the shell) and retry once;
   if it keeps failing, stop Discogs for today.
@@ -78,6 +79,23 @@ Bands that have `ma` or `dc` but no `bc` and no `city` (and bands with `bc` but 
    `city_source: "Bandcamp location"`. A location in another country means it is a different band: skip.
 Every city used must be in `data/cities.json` (name → [lat, lng]); `build.py` prints any missing one —
 add it with coordinates from its Wikipedia page before committing. Never guess a city.
+
+## 3d. Rate Your Music and Last.fm — about 30 bands a day
+Bands that have `ma` or `dc` but no `rym` and no `lfm`. Neither site can be fetched from the scan
+environment, so judge from search-result titles only, as for Metal Archives.
+1. One WebSearch `<Name> band Greece` with `allowed_domains ["rateyourmusic.com","last.fm"]`.
+2. **Rate Your Music**: take `https://rateyourmusic.com/artist/<slug>` only if a result is titled
+   "<Name> Albums: songs, discography, biography, and listening guide - Rate Your Music" and another result
+   ties it to the Greek band (a release by <Name> whose genre fits, or a Greek / Hellenic list or genre page).
+   RYM gives same-named artists their own slugs (`<slug>-1`, `<slug>_f2` ...): if several appear and you
+   cannot tell which is the Greek one, leave it empty.
+3. **Last.fm**: take `https://www.last.fm/music/<Name>` only if the result is titled
+   "<Name> music, videos, stats, and photos" and a result ties it to the Greek band (an album title
+   "<Album> — <Name>" that fits). Last.fm merges every artist with the same name on one page, so leave it
+   empty for common names or names shared with other artists.
+4. Put what you find in `checked[].media` (`{"rym": ..., "lfm": ...}`) with a `media_note` naming the
+   result that confirmed it. A Discogs record that lists an RYM or Last.fm artist URL also confirms it
+   (the nightly Discogs sync fills these automatically).
 
 ## 4. Re-check (`recheck`)
 - Bands with `dc`: re-read the Discogs record. If a link we stored is no longer listed there, or the

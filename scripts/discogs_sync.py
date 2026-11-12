@@ -68,6 +68,8 @@ def classify(u):
     if "open.spotify.com" in h: return ("sp", u) if "/artist/" in u else (None, None)
     if "bandcamp.com" in h: return "bc", u
     if "metal-archives.com" in h: return "ma", u
+    if "rateyourmusic.com" in h: return ("rym", u) if "/artist/" in u else (None, None)
+    if h.endswith("last.fm"): return ("lfm", u) if "/music/" in u else (None, None)
     if any(s in h or s in u for s in SKIP): return None, None
     return "web", u
 

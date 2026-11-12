@@ -11,7 +11,7 @@ results.json format (every list may be empty):
      "dc": "https://www.discogs.com/artist/3617954",                     # "" if none confirmed
      "dc_links_read": true,          # true only if you read the Discogs record and it names Greece
      "links": {"web": "", "fb": "", "yt": "", "ig": "", "bc": "", "sp": ""},  # only from that record
-     "media": {"sp": "", "yt": "", "bc": ""},  # Spotify / YouTube (step 3b) and Bandcamp (step 3c), each confirmed
+     "media": {"sp": "", "yt": "", "bc": "", "rym": "", "lfm": ""},  # Spotify / YouTube (3b), Bandcamp (3c), Rate Your Music / Last.fm (3d), each confirmed
      "media_note": "e.g. 'Spotify: album X matches MA; YouTube: official video Y'",
      "city": "", "city_source": "",  # city or town in Greece, only when a source states it (Discogs profile, Bandcamp location, band bio)
      "note": "short reason, e.g. 'name shared by 3 bands, skipped'"}
@@ -27,7 +27,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = os.path.join(ROOT, "data", "bands.json")
 LINK_FIELDS = ["web", "fb", "yt", "ig", "bc", "sp"]
 ALLOWED_HOSTS = {"ma": "metal-archives.com", "dc": "discogs.com", "fb": "facebook.com", "yt": "youtube.com",
-                 "ig": "instagram.com", "bc": "bandcamp.com", "sp": "open.spotify.com"}
+                 "ig": "instagram.com", "bc": "bandcamp.com", "sp": "open.spotify.com",
+                 "rym": "rateyourmusic.com", "lfm": "last.fm"}
 
 def norm(n):
     n = re.sub(r"\s*\((GRC|GRE)[^)]*\)", "", n)
@@ -95,7 +96,7 @@ def main():
                 u = clean_url((c.get("links") or {}).get(k), k)
                 if u and u != b.get(k):
                     b[k] = u; log.append(f"+{k} {b['name']}")
-        for k in ("sp", "yt", "bc"):
+        for k in ("sp", "yt", "bc", "rym", "lfm"):
             u = clean_url((c.get("media") or {}).get(k), k)
             if u and not b.get(k):
                 b[k] = u; log.append(f"+{k} {b['name']}")
@@ -119,7 +120,7 @@ def main():
         rec = {"id": bid, "name": name, "native": "", "genre": nb.get("genre", ""), "family": fam,
                "scene": "rock" if fam in ("Rock", "Stoner & Sludge") and "metal" not in (nb.get("genre") or "").lower() else "metal",
                "city": "", "city_verified": False, "ma": "", "web": "", "bc": "", "sp": "", "fb": "", "yt": "",
-               "ig": "", "dc": "", "dc_links_read": False, "som": clean_url(nb.get("som"), "") ,
+               "ig": "", "dc": "", "rym": "", "lfm": "", "dc_links_read": False, "som": clean_url(nb.get("som"), "") ,
                "sources": "Spirit of Metal", "notes": f"Genre as listed by Spirit of Metal: {nb.get('genre','')}",
                "checked": "", "added": date}
         db["bands"].append(rec); by_id[bid] = rec; known.add(k)
