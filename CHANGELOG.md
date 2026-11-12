@@ -20,3 +20,4 @@
 - 2026-11-12: Typhus (already listed) updated by hand: genre, city, 6 links
 - 2026-11-12: added Reflection Black by hand
 - 2026-11-12: SI4 (already listed) updated by hand: genre and 2 links
+- 2026-11-12: SI4 city set to Spata (East Attica)
