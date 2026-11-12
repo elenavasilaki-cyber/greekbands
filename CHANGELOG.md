@@ -15,3 +15,4 @@
 - 2026-11-12: fixed 7 Metal Archives links; pilot web check of 20 unlinked bands: 7 bands got links (Bandcamp/Facebook/Instagram/YouTube), 3 cities
 - 2026-11-12: added Gnaal by hand
 - 2026-11-12: added Inferahl by hand
+- 2026-11-12: added Infernal Storm
