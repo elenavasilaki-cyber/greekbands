@@ -23,3 +23,4 @@
 - 2026-11-12: SI4 city set to Spata (East Attica)
 - 2026-11-12: Ostracist (already listed) updated by hand
 - 2026-11-12: Hercules (already listed) updated by hand
+- 2026-11-13: Discogs sync read 28 records (24 name Greece), added 45 links and 13 cities
