@@ -25,3 +25,4 @@
 - 2026-11-12: Hercules (already listed) updated by hand
 - 2026-11-13: Discogs sync read 28 records (24 name Greece), added 45 links and 13 cities
 - 2026-11-15: checked 147, new bands 0, removed 0, added links 107
+- 2026-11-15: Discogs sync read 24 records (17 name Greece), added 36 links and 10 cities
