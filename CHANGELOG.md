@@ -30,3 +30,4 @@
 - 2026-11-15: added Obleedeon and SharkA with links from Elena
 - 2026-11-15: genres from Elena for InPhaze, SoulVanity, Katolisthisi
 - 2026-11-15: Sfyrokalymnon updated by hand (4 links, city Ioannina)
+- 2026-11-15: I Abyssick renamed to Abyssick (Elena)
