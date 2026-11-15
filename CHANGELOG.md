@@ -32,3 +32,4 @@
 - 2026-11-15: Sfyrokalymnon updated by hand (4 links, city Ioannina)
 - 2026-11-15: I Abyssick renamed to Abyssick (Elena)
 - 2026-11-15: End of Dawn: Spotify added
+- 2026-11-15: End of Dawn: YouTube added (Elena)
