@@ -27,3 +27,4 @@
 - 2026-11-15: checked 147, new bands 0, removed 0, added links 107
 - 2026-11-15: Discogs sync read 24 records (17 name Greece), added 36 links and 10 cities
 - 2026-11-15: links and cities from Elena: 17 bands updated, 9 added (NightKill, I Abyssick, Carnivora's Feast, InPhaze, Hypostasis, Katolisthisi, Narcosis, Axeon, Soulvanity)
+- 2026-11-15: added Obleedeon and SharkA with links from Elena
