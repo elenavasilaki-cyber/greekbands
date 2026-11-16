@@ -39,3 +39,4 @@
 - 2026-11-16: Katolisthisi shown as Κατολίσθηση // Katolisthisi (Elena)
 - 2026-11-16: Abyssick renamed back to I Abyssick (Elena)
 - 2026-11-16: search now tolerates small typos in band names (e.g. Demonrowned finds Demoncrowned)
+- 2026-11-16: Discogs sync read 27 records (23 name Greece), added 31 links and 15 cities
