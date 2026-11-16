@@ -42,3 +42,4 @@
 - 2026-11-16: Discogs sync read 27 records (23 name Greece), added 31 links and 15 cities
 - 2026-11-16: Rejection: 5 links from Elena
 - 2026-11-16: InPhaze: Instagram (Elena)
+- 2026-11-16: added Aesemnia (Elena)
