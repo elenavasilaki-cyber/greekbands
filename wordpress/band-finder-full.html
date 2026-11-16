@@ -92,6 +92,20 @@
     if (state.place) pill(ex, "\uD83D\uDCCD " + state.place + "  \u2715", null, true, function(){ state.place = ""; refresh(); });
   }
 
+  function near(q, t){
+    // smallest number of typos (edits) between q and any part of t
+    var m = q.length, prev = new Array(m + 1), cur = new Array(m + 1), best = m, i, j;
+    for (i = 0; i <= m; i++) prev[i] = i;
+    for (j = 1; j <= t.length; j++) {
+      cur[0] = 0;
+      for (i = 1; i <= m; i++) {
+        cur[i] = Math.min(prev[i] + 1, cur[i-1] + 1, prev[i-1] + (q.charAt(i-1) === t.charAt(j-1) ? 0 : 1));
+      }
+      if (cur[m] < best) best = cur[m];
+      var s = prev; prev = cur; cur = s;
+    }
+    return best;
+  }
   function filtered(noPlace){
     var q = fold(state.q.trim());
     var out = bands.filter(function(b){
@@ -101,7 +115,7 @@
       if (state.media && !(b.yt || b.sp)) return false;
       if (state.city && !b.city) return false;
       if (!noPlace && state.place && b.city !== state.place) return false;
-      if (q && b._s.indexOf(q) === -1) return false;
+      if (q && b._s.indexOf(q) === -1 && !(q.length >= 5 && near(q, b._k) <= (q.length >= 9 ? 2 : 1))) return false;
       return true;
     });
     out.sort(function(a,b){
