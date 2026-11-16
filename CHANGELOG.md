@@ -37,3 +37,4 @@
 - 2026-11-16: added Crust of Sin with links from Elena
 - 2026-11-16: Narcosis: Facebook, Instagram, Spotify (Elena)
 - 2026-11-16: Katolisthisi shown as Κατολίσθηση // Katolisthisi (Elena)
+- 2026-11-16: Abyssick renamed back to I Abyssick (Elena)
