@@ -46,3 +46,4 @@
 - 2026-11-16: Aesemnia: Spotify, YouTube channel (Elena)
 - 2026-11-16: added Panic Alarm (Elena)
 - 2026-11-16: Panic Alarm: Spotify (Elena)
+- 2026-11-16: NightKill: Metal Archives, Spotify, Bandcamp, website (Elena)
