@@ -44809,6 +44809,32 @@
    "added": "2026-11-15",
    "rym": "",
    "lfm": ""
+  },
+  {
+   "id": "crustofsin",
+   "name": "Crust of Sin",
+   "native": "",
+   "genre": "Hard Rock",
+   "family": "Rock",
+   "scene": "rock",
+   "city": "Corfu",
+   "city_verified": true,
+   "ma": "",
+   "web": "",
+   "bc": "https://crustofsin.bandcamp.com",
+   "sp": "https://open.spotify.com/artist/4es4nw3i20nRzFzGpRDXFJ",
+   "fb": "https://www.facebook.com/Crust.Of.Sin/",
+   "yt": "https://www.youtube.com/user/crustofsin",
+   "ig": "",
+   "dc": "",
+   "dc_links_read": false,
+   "som": "",
+   "sources": "Added by Elena",
+   "notes": "Updated by Elena 2026-11-16: added with links; Hard Rock from Corfu per Bandcamp bio and location",
+   "checked": "2026-11-16",
+   "added": "2026-11-16",
+   "rym": "",
+   "lfm": ""
   }
  ]
 }
