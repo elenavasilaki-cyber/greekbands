@@ -43,3 +43,4 @@
 - 2026-11-16: Rejection: 5 links from Elena
 - 2026-11-16: InPhaze: Instagram (Elena)
 - 2026-11-16: added Aesemnia (Elena)
+- 2026-11-16: Aesemnia: Spotify, YouTube channel (Elena)
