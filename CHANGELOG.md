@@ -44,3 +44,4 @@
 - 2026-11-16: InPhaze: Instagram (Elena)
 - 2026-11-16: added Aesemnia (Elena)
 - 2026-11-16: Aesemnia: Spotify, YouTube channel (Elena)
+- 2026-11-16: added Panic Alarm (Elena)
