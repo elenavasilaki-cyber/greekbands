@@ -53,3 +53,4 @@
 - 2026-11-18: added Element Zero, Krûsalé and Zabrahana with links from Elena
 - 2026-11-18: Discogs sync read 25 records (20 name Greece), added 41 links and 8 cities
 - 2026-11-22: checked 150, new bands 0, removed 0, added links 118
+- 2026-11-22: Discogs sync read 27 records (21 name Greece), added 38 links and 14 cities
