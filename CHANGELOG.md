@@ -56,3 +56,4 @@
 - 2026-11-22: Discogs sync read 27 records (21 name Greece), added 38 links and 14 cities
 - 2026-11-22: added Baladesert and SaikoDeva from Elena's Bandcamp links
 - 2026-11-23: checked 152, new bands 0, removed 0, added links 106
+- 2026-11-23: Discogs sync read 30 records (26 name Greece), added 45 links and 17 cities
