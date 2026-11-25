@@ -59,3 +59,4 @@
 - 2026-11-23: Discogs sync read 30 records (26 name Greece), added 45 links and 17 cities
 - 2026-11-25: checked 155, new bands 0, removed 0, added links 116
 - 2026-11-25: Discogs sync read 37 records (30 name Greece), added 45 links and 17 cities
+- 2026-11-25: added Alcestice by hand (Elena): genre, city Athens, 6 links
