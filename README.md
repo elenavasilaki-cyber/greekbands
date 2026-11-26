@@ -16,3 +16,9 @@ Sources: Spirit of Metal (Greece band index), Wikipedia (de) list of Greek metal
 Encyclopaedia Metallum, Discogs.
 
 The daily scan runs every morning (about 04:30 Athens time) and follows `DAILY_SCAN.md`.
+
+## Venue Finder
+- `venues/venues.json` — venues the Greek Rock & Metal Venue Finder page loads (cities with map coordinates + venues)
+- `venues/VENUE_SCAN.md` — procedure of the daily venue scan (about 05:40 Athens time)
+- `scripts/venues_apply.py` — merges a scan into `venues/venues.json`
+- `wordpress/venue-finder.html` — the code to paste into the WordPress Custom HTML block

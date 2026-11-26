@@ -1,0 +1,398 @@
+<!-- ============================================================
+     WTBUZZ.NET — Greek Rock & Metal Venue Finder
+     Same design as the Bar Finder. Paste into ONE Custom HTML block.
+     Don't put it on the same page as the Bar Finder.
+     The venue list loads from GitHub (elenavasilaki-cyber/greekbands, venues/venues.json),
+     which a daily scan updates, so new venues appear without re-pasting.
+     If GitHub can't be reached, the built-in copy below is shown instead.
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  #wtb-venues{
+    color-scheme:dark;
+    --bg:#000000; --panel:#121212; --panel-2:#1a1716; --line:rgba(255,255,255,0.09);
+    --ink:#eee9e2; --ink-soft:#a39d94; --ink-faint:#6e6862;
+    --ember:#c9391f; --ember-glow:#e85f2f; --gold:#c99a4a;
+    --link:#e01414; --link-hover:#ff3b30;
+    --land:#1d1a18; --land-edge:#3a332e; --land-other:#0f0e0d; --sea:#070707;
+    background:var(--bg); color:var(--ink);
+    font-family:'Jost',-apple-system,'Segoe UI',sans-serif; -webkit-font-smoothing:antialiased;
+  }
+  #wtb-venues *{ box-sizing:border-box; }
+  #wtb-venues header{ padding-block:1.8rem 1.2rem; padding-inline:16px; text-align:center; }
+  #wtb-venues h1{
+    font-family:'Oswald','Arial Narrow',sans-serif; font-weight:700; letter-spacing:0.02em; color:var(--ink);
+    font-size:clamp(1.4rem,4.5vw,2rem); margin:0 0 0.4rem; text-transform:uppercase; text-wrap:balance; line-height:1.2;
+  }
+  #wtb-venues h1 span{ color:var(--ember-glow); }
+  #wtb-venues .lede{ color:var(--ink-soft); font-size:0.92rem; max-width:60ch; margin:0 auto; line-height:1.5; }
+
+  #wtb-venues .wrap{ max-width:1100px; margin:0 auto; padding-inline:16px; padding-block:0 2.5rem; }
+
+  #wtb-venues .search-row{ display:flex; gap:0.6rem; margin:1.2rem 0 1rem; flex-wrap:wrap; }
+  #wtb-venues .search-row input{
+    flex:1 1 260px; min-width:0; background:var(--panel); border:1px solid var(--line); color:var(--ink);
+    padding:0.7rem 0.9rem; border-radius:6px; font-family:inherit; font-size:0.95rem;
+  }
+  #wtb-venues .search-row input:focus{ outline:none; border-color:var(--ember); }
+
+  #wtb-venues .filters{ display:grid; gap:0.55rem; margin-bottom:1.2rem; }
+  #wtb-venues .filter-label{
+    font-family:'Oswald',sans-serif; text-transform:uppercase; letter-spacing:0.08em;
+    font-size:0.68rem; color:var(--gold);
+  }
+  #wtb-venues .chip-row{ display:flex; gap:0.45rem; flex-wrap:wrap; }
+  #wtb-venues .chip{
+    background:var(--panel); border:1px solid var(--line); color:var(--ink-soft);
+    padding:0.4rem 0.85rem; border-radius:999px; font-size:0.78rem; cursor:pointer;
+    font-family:'Oswald',sans-serif; letter-spacing:0.03em; text-transform:uppercase;
+    transition:background .15s ease, border-color .15s ease, color .15s ease;
+  }
+  #wtb-venues .chip:hover{ border-color:rgba(201,57,31,0.6); color:var(--ink); }
+  #wtb-venues .chip:focus-visible{ outline:2px solid var(--ember-glow); outline-offset:2px; }
+  #wtb-venues .chip.active{ background:var(--ember); border-color:var(--ember); color:#fff; }
+  #wtb-venues .chip .n{ opacity:0.6; margin-left:0.3rem; font-variant-numeric:tabular-nums; }
+
+  #wtb-venues .map-box{
+    position:relative; border-radius:8px; border:1px solid var(--line); margin-bottom:1.3rem;
+    background:var(--sea); overflow:hidden;
+  }
+  #wtb-venues #v-map{ display:block; width:100%; height:auto; max-height:520px; }
+  #wtb-venues .map-hint{
+    position:absolute; left:12px; bottom:10px; font-size:0.72rem; color:var(--ink-faint);
+    pointer-events:none;
+  }
+  #wtb-venues .country{ fill:var(--land-other); stroke:#1f1c1a; stroke-width:0.6; }
+  #wtb-venues .country.gr{ fill:var(--land); stroke:var(--land-edge); stroke-width:0.8; }
+  #wtb-venues .grid-line{ stroke:rgba(255,255,255,0.04); stroke-width:1; fill:none; }
+  #wtb-venues .sea-label{ fill:#2a2522; font-family:'Oswald',sans-serif; font-size:13px; letter-spacing:0.3em; text-transform:uppercase; }
+  #wtb-venues .pin{ cursor:pointer; }
+  #wtb-venues .pin circle.halo{ fill:rgba(201,57,31,0.18); stroke:rgba(232,95,47,0.5); stroke-width:1; }
+  #wtb-venues .pin circle.core{ fill:var(--ember); stroke:#fff; stroke-width:1.5; }
+  #wtb-venues .pin text.count{ fill:#fff; font-family:'Oswald',sans-serif; font-weight:600; font-size:12px; text-anchor:middle; dominant-baseline:central; pointer-events:none; }
+  #wtb-venues .pin text.city{ fill:var(--ink); font-family:'Oswald',sans-serif; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; paint-order:stroke; stroke:#000; stroke-width:3px; pointer-events:none; }
+  #wtb-venues .pin.active circle.core{ fill:var(--gold); }
+  #wtb-venues .pin.dim{ opacity:0.3; }
+  #wtb-venues .pin:focus{ outline:none; }
+  #wtb-venues .pin:focus-visible circle.core{ stroke:var(--gold); stroke-width:3; }
+
+  #wtb-venues .count-line{ display:flex; justify-content:space-between; gap:0.6rem; flex-wrap:wrap; font-size:0.82rem; color:var(--ink-soft); margin:0 0 0.8rem; }
+  #wtb-venues .count-line button{ background:none; border:none; color:var(--link); cursor:pointer; font:inherit; padding:0; }
+  #wtb-venues .count-line button:hover{ color:var(--link-hover); }
+
+  #wtb-venues .grid{ display:grid; grid-template-columns:1fr 1fr; gap:0.9rem; align-items:start; }
+  @media (max-width:680px){ #wtb-venues .grid{ grid-template-columns:1fr; } }
+
+  #wtb-venues .card{
+    background:var(--panel); border:1px solid var(--line); border-radius:8px;
+    padding:1rem 1.1rem; display:grid; gap:0.5rem; transition:border-color .15s ease;
+  }
+  #wtb-venues .card:hover{ border-color:rgba(201,57,31,0.6); }
+  #wtb-venues .card-head{ display:flex; justify-content:space-between; align-items:flex-start; gap:0.6rem; }
+  #wtb-venues .card h3{ font-family:'Oswald',sans-serif; font-size:1.05rem; margin:0; font-weight:600; text-wrap:balance; color:var(--ink); line-height:1.3; }
+  #wtb-venues .roles{ display:flex; gap:0.3rem; flex-wrap:wrap; justify-content:flex-end; flex-shrink:0; max-width:55%; }
+  #wtb-venues .role{
+    font-family:'Oswald',sans-serif; font-size:0.64rem; letter-spacing:0.08em; text-transform:uppercase;
+    padding:0.12rem 0.45rem; border-radius:3px; border:1px solid var(--line); color:var(--ink-soft); white-space:nowrap;
+  }
+  #wtb-venues .role.club{ color:var(--ember-glow); border-color:rgba(232,95,47,0.5); }
+  #wtb-venues .role.hall{ color:var(--ink); border-color:rgba(238,233,226,0.35); }
+  #wtb-venues .role.openair{ color:var(--gold); border-color:rgba(201,154,74,0.5); }
+  #wtb-venues .role.new{ color:#fff; background:var(--ember); border-color:var(--ember); }
+  #wtb-venues .addr{ font-size:0.84rem; color:var(--ink-soft); }
+  #wtb-venues .contact{ font-size:0.8rem; color:var(--ink-soft); }
+  #wtb-venues .genres{ display:flex; gap:0.35rem; flex-wrap:wrap; }
+  #wtb-venues .tag{
+    font-size:0.68rem; letter-spacing:0.04em; text-transform:uppercase;
+    background:rgba(201,57,31,0.14); color:var(--ember-glow); border:1px solid rgba(201,57,31,0.3);
+    padding:0.15rem 0.5rem; border-radius:999px;
+  }
+  #wtb-venues .map-link{ display:inline-flex; align-items:center; gap:0.3rem; flex-shrink:0; }
+  #wtb-venues .map-link svg{ width:14px; height:14px; fill:currentColor; }
+  #wtb-venues .card-foot .links{ display:flex; gap:0.9rem; flex-wrap:wrap; align-items:baseline; }
+  #wtb-venues .note{ font-size:0.84rem; color:var(--ink-soft); line-height:1.5; }
+  #wtb-venues .card-foot{ display:flex; justify-content:space-between; gap:0.8rem; flex-wrap:wrap; align-items:baseline; border-top:1px solid var(--line); padding-top:0.55rem; }
+  #wtb-venues .card a{ color:var(--link); font-size:0.8rem; text-decoration:none; border-bottom:1px solid transparent; overflow-wrap:anywhere; }
+  #wtb-venues .card a:hover{ color:var(--link-hover); border-bottom-color:var(--link-hover); }
+  #wtb-venues .src{ font-size:0.72rem; color:var(--ink-faint); line-height:1.4; }
+  #wtb-venues mark{ background:rgba(201,154,74,0.3); color:inherit; border-radius:2px; }
+
+  #wtb-venues .empty{ text-align:center; padding:2.5rem 1rem; color:var(--ink-soft); font-size:0.9rem; }
+  #wtb-venues [hidden]{ display:none !important; }
+
+  #wtb-venues footer{
+    text-align:center; padding-block:2.2rem 3rem; padding-inline:16px; color:var(--ink-soft); font-size:0.76rem;
+    border-top:1px solid var(--line); margin-top:2rem; line-height:1.6;
+  }
+  #wtb-venues footer p{ max-width:72ch; margin:0 auto; }
+  @media (prefers-reduced-motion:reduce){ #wtb-venues *{ transition:none !important; } }
+
+  /* Theme overrides: keep filter chips as small pills */
+  #wtb-venues .chip-row{ display:flex !important; flex-wrap:wrap !important; gap:0.45rem !important; }
+  #wtb-venues button.chip{
+    display:inline-flex !important; align-items:center !important; width:auto !important; max-width:none !important;
+    min-width:0 !important; min-height:0 !important; height:auto !important; flex:0 0 auto !important; float:none !important;
+    margin:0 !important; padding:0.4rem 0.85rem !important; line-height:1.2 !important; box-shadow:none !important;
+    font-size:0.78rem !important; font-weight:400 !important; text-align:center !important;
+    background:var(--panel) !important; color:var(--ink-soft) !important; border:1px solid var(--line) !important; border-radius:999px !important;
+  }
+  #wtb-venues button.chip:hover{ border-color:rgba(201,57,31,0.6) !important; color:var(--ink) !important; }
+  #wtb-venues button.chip.active{ background:var(--ember) !important; border-color:var(--ember) !important; color:#fff !important; }
+  #wtb-venues .count-line button{ width:auto !important; display:inline !important; background:none !important; border:none !important; padding:0 !important; margin:0 !important; box-shadow:none !important; color:var(--link) !important; }
+</style>
+
+<div id="wtb-venues">
+<header>
+  <h1>Greek Rock <span>&amp;</span> Metal Venue Finder</h1>
+  <p class="lede">Clubs, halls and open-air stages across Greece that host rock and metal shows. Search by city, venue or area, filter by type of stage or region, or tap a city on the map.</p>
+</header>
+
+<div class="wrap">
+  <div class="search-row">
+    <input type="text" id="v-search" placeholder="Search by city, venue or area (e.g. Exarchia, Gazi, Crete, festival)…" autocomplete="off" aria-label="Search venues">
+  </div>
+
+  <div class="filters">
+    <div class="filter-label">Type of stage</div>
+    <div class="chip-row" id="v-typeChips"></div>
+    <div class="filter-label">Region</div>
+    <div class="chip-row" id="v-regionChips"></div>
+  </div>
+
+  <div class="map-box">
+    <svg id="v-map" viewBox="0 0 800 620" role="img" aria-label="Map of Greece with rock and metal venue locations by city"></svg>
+    <div class="map-hint">Pins are city-level. Number = venues in that city.</div>
+  </div>
+
+  <div class="count-line"><span id="v-count"></span><button type="button" id="v-clearCity" hidden>Show all cities</button></div>
+  <div class="grid" id="v-grid"></div>
+  <div class="empty" id="v-empty" hidden>No venues match that search. Try a broader term or clear the filters.</div>
+</div>
+
+<footer>
+  <p>Compiled from Bandsintown, Songkick, Shazam, MyRockShows, Concerts-Metal, rocking.gr and Rock Overdose gig listings and tour dates, plus festival and venue pages. The list is checked every day for new rock and metal stages. Locations are city-level. Venues open, close and move, so check the venue's Facebook or Instagram before heading out. Know a stage that's missing? Tell us. Map geometry: Natural Earth via Datamaps.</p>
+</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datamaps/0.5.9/datamaps.world.hires.min.js"></script>
+<script>
+(function(){
+// ---- Data: live from GitHub, built-in copy as fallback ----
+const SOURCES = [
+  "https://raw.githubusercontent.com/elenavasilaki-cyber/greekbands/main/venues/venues.json",
+  "https://cdn.jsdelivr.net/gh/elenavasilaki-cyber/greekbands@main/venues/venues.json"
+];
+const FALLBACK = /*FALLBACK_START*/{"updated":"2026-11-26","cities":{"Athens":{"lat":37.9838,"lng":23.7275,"lbl":"r","region":"Attica"},"Thessaloniki":{"lat":40.6401,"lng":22.9444,"lbl":"r","region":"Macedonia"},"Trikala":{"lat":39.5557,"lng":21.7679,"lbl":"l","region":"Thessaly"},"Larissa":{"lat":39.639,"lng":22.4191,"lbl":"a","region":"Thessaly"},"Volos":{"lat":39.3622,"lng":22.942,"lbl":"r","region":"Thessaly"},"Karditsa":{"lat":39.3647,"lng":21.9219,"lbl":"b","region":"Thessaly"},"Ioannina":{"lat":39.665,"lng":20.8537,"lbl":"a","region":"Epirus"},"Corfu":{"lat":39.6243,"lng":19.9217,"lbl":"b","region":"Ionian Islands"},"Patras":{"lat":38.2466,"lng":21.7346,"lbl":"l","region":"Peloponnese & West"},"Kalamata":{"lat":37.0389,"lng":22.1142,"lbl":"r","region":"Peloponnese & West"},"Chania":{"lat":35.5138,"lng":24.018,"lbl":"a","region":"Crete"},"Heraklion":{"lat":35.3387,"lng":25.1442,"lbl":"r","region":"Crete"}},"venues":[{"id":"kyttaro-live-athens","name":"Kyttaro Live","city":"Athens","address":"Ipirou 48, Victoria","type":"club","note":"Historic club running since the 1970s; regular home for Greek rock, punk and metal plus touring extreme metal.","url":"","phone":"","email":"","source":"Bandsintown; Songkick","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"an-club-athens","name":"AN Club","city":"Athens","address":"Solomou 13–15, Exarchia","type":"club","note":"Long-running Exarchia rock club: hard rock, metal, punk and hardcore, from local bills to international tours.","url":"","phone":"","email":"","source":"Bandsintown; Songkick","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"gagarin-205-athens","name":"Gagarin 205","city":"Athens","address":"Liosion 205, Attiki","type":"club","note":"One of the city's biggest club stages for touring metal and rock acts.","url":"","phone":"","email":"","source":"Bandsintown; Songkick","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"fuzz-club-athens","name":"Fuzz Club","city":"Athens","address":"Pireos 209, Tavros","type":"club","note":"Major stop for international rock, metal and alternative tours.","url":"","phone":"","email":"","source":"Bandsintown; Songkick","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"temple-athens-athens","name":"Temple Athens","city":"Athens","address":"Iakchou 17, Gazi","type":"club","note":"Mid-size club with a strong black, doom and extreme metal calendar.","url":"","phone":"","email":"","source":"Concerts-Metal; Songkick","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"piraeus-club-academy-athens","name":"Piraeus Club Academy","city":"Athens","address":"Pireos 117, Kerameikos","type":"club","note":"Large club hosting metal and rock headliners and multi-band bills.","url":"","phone":"","email":"","source":"Shazam; Bandsintown","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"gazarte-athens","name":"Gazarte","city":"Athens","address":"Voutadon 32–34, Gazi","type":"club","note":"Multi-level venue with a main stage used for rock and alternative tours.","url":"","phone":"","email":"","source":"Songkick","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"floyd-live-music-venue-athens","name":"Floyd Live Music Venue","city":"Athens","address":"Athens","type":"club","note":"Large-capacity club hosting international metal headliners.","url":"","phone":"","email":"","source":"Concerts-Metal","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"arch-club-live-stage-athens","name":"ARCH Club – Live Stage","city":"Athens","address":"Athens","type":"club","note":"Live stage (formerly billed as Architektoniki) with regular metal and rock tours.","url":"","phone":"","email":"","source":"Concerts-Metal; MyRockShows","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"death-disco-athens","name":"Death Disco","city":"Athens","address":"Psyrri","type":"club","note":"Small club for rock, garage and alternative bills.","url":"","phone":"","email":"","source":"Songkick","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"en-vivo-rock-athens","name":"En Vivo Rock (Πολυχώρος Π.Ο.Κ.Ε.)","city":"Athens","address":"Leoforos Kyprou 98, Peristeri","type":"club","note":"Rock bar and live stage run by Π.Ο.Κ.Ε. (Πολιτιστικός Οργανισμός Καλλιτεχνών Ελλάδος), with regular live rock nights.","url":"https://www.facebook.com/p/En-Vivo-Rock-100060867871855/","phone":"","email":"","source":"Venue Facebook page","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"ergostasio-35-athens","name":"Ergostasio 35 (Εργοστάσιο 35)","city":"Athens","address":"Pireos 35A & Georgiou Kondyli 2, Moschato 183 46","type":"club","note":"Live stage in Moschato hosting rock and metal shows.","url":"","phone":"+30 210 345 0817","email":"info@ergostasio35.gr","source":"Venue details","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"technopolis-athens","name":"Technopolis","city":"Athens","address":"Pireos 100, Gazi","type":"openair","note":"Former gasworks complex; hosts Rock Hard Festival Greece and other open-air rock and metal events.","url":"","phone":"","email":"","source":"Festival pages","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"lycabettus-theatre-athens","name":"Lycabettus Theatre","city":"Athens","address":"Lycabettus Hill","type":"openair","note":"Open-air amphitheatre on the hill for summer rock and metal concerts.","url":"","phone":"","email":"","source":"Songkick","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"theatro-vrachon-melina-merkouri-athens","name":"Theatro Vrachon Melina Merkouri","city":"Athens","address":"Vyronas","type":"openair","note":"Open-air rock theatre used for summer concerts.","url":"","phone":"","email":"","source":"Songkick","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"plateia-nerou-athens","name":"Plateia Nerou","city":"Athens","address":"Faliro coastal zone, Palaio Faliro","type":"openair","note":"Seafront festival grounds; home of Release Athens.","url":"","phone":"","email":"","source":"Festival pages","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"terravibe-park-athens","name":"TerraVibe Park","city":"Athens","address":"Malakasa, Attica","type":"openair","note":"Permanent home of the Rockwave Festival.","url":"","phone":"","email":"","source":"Festival pages","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"athens-olympic-stadium-athens","name":"Athens Olympic Stadium (OAKA)","city":"Athens","address":"Kifisias Ave, Marousi","type":"openair","note":"Stadium-scale shows for the biggest rock and metal tours.","url":"","phone":"","email":"","source":"Songkick","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"eightball-club-thessaloniki","name":"Eightball Club","city":"Thessaloniki","address":"Thessaloniki","type":"club","note":"The city's busiest club for touring metal and hard rock.","url":"","phone":"","email":"","source":"Concerts-Metal; Bandsintown","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"we-thessaloniki","name":"WE","city":"Thessaloniki","address":"Thessaloniki","type":"club","note":"Club stage for rock, metal and grindcore tours.","url":"","phone":"","email":"","source":"Concerts-Metal","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"principal-club-theater-thessaloniki","name":"Principal Club Theater","city":"Thessaloniki","address":"Thessaloniki","type":"hall","note":"Larger indoor venue for rock and metal headliners.","url":"","phone":"","email":"","source":"Bandsintown","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"fix-factory-of-sound-thessaloniki","name":"Fix Factory of Sound","city":"Thessaloniki","address":"Thessaloniki","type":"club","note":"Live venue with rock and metal shows.","url":"","phone":"","email":"","source":"Bandsintown","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"block-33-thessaloniki","name":"Block 33","city":"Thessaloniki","address":"26is Oktovriou 33","type":"club","note":"Industrial-space venue hosting rock and alternative concerts.","url":"","phone":"","email":"","source":"Songkick","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"moni-lazariston-thessaloniki","name":"Moni Lazariston","city":"Thessaloniki","address":"Kolokotroni 21, Stavroupoli","type":"openair","note":"Monastery courtyard used for summer rock and metal concerts.","url":"","phone":"","email":"","source":"Songkick","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"theatro-gis-thessaloniki","name":"Theatro Gis (Earth Theatre)","city":"Thessaloniki","address":"Seich Sou forest","type":"openair","note":"Open-air theatre for larger summer shows.","url":"","phone":"","email":"","source":"Songkick","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"andromeda-trikala","name":"Andromeda","city":"Trikala","address":"Trikala","type":"club","note":"Live music spot hosting touring metal acts and the yearly festival of Trikala bands.","url":"","phone":"","email":"","source":"Local listings","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"souita-art-cafe-trikala","name":"Souita Art Cafe","city":"Trikala","address":"Trikala","type":"club","note":"Main-show stage of the Horns Up Festival, the city's underground metal weekend.","url":"","phone":"","email":"","source":"Horns Up Festival","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"cardinal-trikala","name":"Cardinal","city":"Trikala","address":"Trikala","type":"club","note":"Bar that has hosted Horns Up Festival warm-up shows.","url":"","phone":"","email":"","source":"Horns Up Festival","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"circus-hub-larissa","name":"Circus Hub","city":"Larissa","address":"Larissa","type":"club","note":"Club stop on Greek heavy rock and stoner tours.","url":"","phone":"","email":"","source":"Rock Overdose tour dates","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"skyland-larissa","name":"Skyland","city":"Larissa","address":"Larissa","type":"club","note":"Regular heavy metal nights with Greek bands.","url":"","phone":"","email":"","source":"rocking.gr","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"cafe-santan-volos","name":"Café Santan","city":"Volos","address":"Volos","type":"club","note":"Volos stop for heavy rock, stoner and psych tours.","url":"","phone":"","email":"","source":"Rock Overdose tour dates","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"open-municipal-theatre-of-nea-ionia-volos","name":"Open Municipal Theatre of Nea Ionia","city":"Volos","address":"Nea Ionia","type":"openair","note":"Open-air stage used for summer rock festivals.","url":"","phone":"","email":"","source":"Festival pages","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"blues-bar-karditsa","name":"Blues Bar","city":"Karditsa","address":"Karditsa","type":"club","note":"Bar stage on Greek heavy rock tour routes.","url":"","phone":"","email":"","source":"Rock Overdose tour dates","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"stage-ioannina-ioannina","name":"Stage Ioannina","city":"Ioannina","address":"Ioannina","type":"club","note":"Ioannina's club stop for touring Greek rock bands.","url":"","phone":"","email":"","source":"Rock Overdose tour dates","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"studio-203-ioannina","name":"Studio 203","city":"Ioannina","address":"Ioannina","type":"club","note":"Hosts death and extreme metal nights.","url":"","phone":"","email":"","source":"rocking.gr","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"brigada-of-domovoi-ioannina","name":"Brigada of Domovoi","city":"Ioannina","address":"Ioannina","type":"club","note":"Rock and metal gigs, including anniversary tour dates.","url":"","phone":"","email":"","source":"rocking.gr","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"epta-technon-topos-corfu","name":"Epta Technon Topos","city":"Corfu","address":"Corfu Town","type":"club","note":"Corfu stop for touring Greek rock bands.","url":"","phone":"","email":"","source":"Rock Overdose tour dates","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"frida-bar-n-stage-patras","name":"Frida Bar n' Stage","city":"Patras","address":"Patras","type":"club","note":"Patras bar-stage on Greek rock and metal tour routes.","url":"","phone":"","email":"","source":"Rock Overdose tour dates","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"brooklyn-stage-kalamata","name":"Brooklyn Stage","city":"Kalamata","address":"Kalamata","type":"club","note":"Kalamata's stop for touring heavy rock bands.","url":"","phone":"","email":"","source":"Rock Overdose tour dates","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"theatro-anatolikis-tafrou-chania","name":"Theatro Anatolikis Tafrou","city":"Chania","address":"East Moat, Old Town","type":"openair","note":"Open-air theatre in the Venetian moat; home of Chania Rock Festival.","url":"","phone":"","email":"","source":"Festival pages","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"bras-de-freres-chania","name":"Bras de Freres","city":"Chania","address":"Chania","type":"club","note":"Chania club stop on Greek rock and stoner tours.","url":"","phone":"","email":"","source":"Rock Overdose tour dates","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"cine-studio-heraklion","name":"Cine Studio","city":"Heraklion","address":"Heraklion","type":"hall","note":"Indoor venue used for touring rock bands.","url":"","phone":"","email":"","source":"Rock Overdose tour dates","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"nyn-aei-heraklion","name":"Nyn & Aei","city":"Heraklion","address":"Venetian Walls","type":"openair","note":"Space on the Venetian walls hosting Over The Wall – Crete Rock Festival every August.","url":"","phone":"","email":"","source":"Festival pages","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"},{"id":"stoa-60-heraklion","name":"Stoa 60","city":"Heraklion","address":"Heraklion","type":"club","note":"Small stage for punk and hardcore touring bands.","url":"","phone":"","email":"","source":"Local listings","source_url":"","added":"2026-11-26","checked":"2026-11-26","status":"open"}]}/*FALLBACK_END*/;
+
+const TYPE_NAMES = { club: "Club", hall: "Hall / theatre", openair: "Open-air / festival" };
+const REGIONS = ["Attica","Macedonia","Thrace","Thessaly","Epirus","Central Greece","Ionian Islands","Peloponnese & West","Aegean Islands","Crete"];
+const NEW_DAYS = 30;
+
+let CITIES = {}, VENUES = [], UPDATED = "";
+let activeType = null, activeRegion = null, activeCity = null;
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const regionOf = v => (CITIES[v.city] || {}).region || "";
+const isNew = v => v.added && (Date.now() - Date.parse(v.added)) / 864e5 <= NEW_DAYS && v.added > "2026-11-26";
+
+function useData(d){
+  if (!d || !Array.isArray(d.venues) || !d.cities) return false;
+  CITIES = d.cities;
+  VENUES = d.venues.filter(v => v.status !== "closed" && CITIES[v.city]);
+  UPDATED = d.updated || "";
+  return VENUES.length > 0;
+}
+
+function load(i){
+  if (i >= SOURCES.length) { useData(FALLBACK); update(); return; }
+  const bust = SOURCES[i].indexOf("raw.githubusercontent") > -1 ? "?t=" + Math.floor(Date.now() / 3.6e6) : "";
+  fetch(SOURCES[i] + bust, { cache: "no-cache" })
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(d => { if (useData(d)) update(); else load(i + 1); })
+    .catch(() => load(i + 1));
+}
+
+function matches(v, q, ignoreCity){
+  const hay = [v.name, v.city, v.address, v.note, regionOf(v), TYPE_NAMES[v.type], isNew(v) ? "new" : ""].join(' ').toLowerCase();
+  return (!activeType || v.type === activeType)
+      && (!activeRegion || regionOf(v) === activeRegion)
+      && (ignoreCity || !activeCity || v.city === activeCity)
+      && (!q || q.split(/\s+/).every(w => hay.includes(w)));
+}
+
+function chip(text, n, active, onClick){
+  const el = document.createElement('button');
+  el.type = 'button';
+  el.className = 'chip' + (active ? ' active' : '');
+  el.innerHTML = esc(text) + (n != null ? `<span class="n">${n}</span>` : '');
+  el.setAttribute('aria-pressed', active ? 'true' : 'false');
+  el.onclick = onClick;
+  return el;
+}
+
+function renderChips(){
+  const tr = $('v-typeChips'); tr.innerHTML = '';
+  tr.appendChild(chip('All', null, activeType === null, () => { activeType = null; update(); }));
+  Object.keys(TYPE_NAMES).forEach(t => {
+    const n = VENUES.filter(v => v.type === t).length;
+    if (!n) return;
+    tr.appendChild(chip(TYPE_NAMES[t], n, activeType === t, () => { activeType = activeType === t ? null : t; update(); }));
+  });
+  const rr = $('v-regionChips'); rr.innerHTML = '';
+  rr.appendChild(chip('All Greece', null, activeRegion === null, () => { activeRegion = null; update(); }));
+  REGIONS.forEach(r => {
+    const n = VENUES.filter(v => regionOf(v) === r).length;
+    if (!n) return;
+    rr.appendChild(chip(r, n, activeRegion === r, () => { activeRegion = activeRegion === r ? null : r; activeCity = null; update(); }));
+  });
+}
+
+function hl(text, q){
+  const t = esc(text);
+  if (!q) return t;
+  let out = t;
+  q.split(/\s+/).filter(w => w.length > 1).forEach(w => {
+    const re = new RegExp('(' + w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'ig');
+    out = out.replace(re, '<mark>$1</mark>');
+  });
+  return out;
+}
+
+function fmtDate(d){
+  const t = Date.parse(d);
+  return isNaN(t) ? "" : new Date(t).toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
+}
+
+function renderCards(list, q){
+  const grid = $('v-grid');
+  grid.innerHTML = '';
+  const fresh = list.filter(isNew).length;
+  $('v-count').textContent = list.length + (list.length === 1 ? ' venue' : ' venues')
+    + (activeCity ? ' in ' + activeCity : (activeRegion ? ' in ' + activeRegion : ''))
+    + (fresh ? ` · ${fresh} new` : '')
+    + (UPDATED ? ' · updated ' + fmtDate(UPDATED) : '');
+  $('v-clearCity').hidden = !activeCity;
+  $('v-empty').hidden = list.length > 0;
+
+  list.forEach(v => {
+    const card = document.createElement('article');
+    card.className = 'card';
+    const types = (isNew(v) ? `<span class="role new">New</span>` : '') + `<span class="role ${esc(v.type)}">${TYPE_NAMES[v.type] || ''}</span>`;
+    const address = v.address || v.city;
+    const addr = hl(address, q) + (address.includes(v.city) ? '' : ', ' + hl(v.city, q));
+    const contact = [
+      v.phone ? `<a href="tel:${esc(v.phone.replace(/\s+/g, ''))}">${esc(v.phone)}</a>` : '',
+      v.email ? `<a href="mailto:${esc(v.email)}">${esc(v.email)}</a>` : ''
+    ].filter(Boolean).join(' · ');
+    const link = v.url ? `<a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '').slice(0, 42))}${v.url.length > 50 ? '…' : ''} ↗</a>` : `<span class="src">No website listed</span>`;
+    const mapUrl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(v.maps || [v.name, address, v.city, 'Greece'].join(', '));
+    const mapLink = `<a class="map-link" href="${mapUrl}" target="_blank" rel="noopener" aria-label="Open ${esc(v.name)} in Google Maps"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Google Maps ↗</a>`;
+    card.innerHTML = `
+      <div class="card-head"><h3>${hl(v.name, q)}</h3><div class="roles">${types}</div></div>
+      <div class="addr">${addr}</div>
+      ${contact ? `<div class="contact">${contact}</div>` : ''}
+      <div class="genres"><span class="tag">${esc(regionOf(v))}</span></div>
+      <div class="note">${hl(v.note, q)}</div>
+      <div class="card-foot"><div class="links">${mapLink}${link}</div><span class="src">Source: ${esc(v.source)}</span></div>`;
+    grid.appendChild(card);
+  });
+}
+
+// ---- Map (inline SVG, no tile server) ----
+const B = { lonMin: 19.0, lonMax: 29.2, latMin: 34.6, latMax: 42.2 };
+const W = 800;
+const mercY = lat => Math.log(Math.tan(Math.PI/4 + lat*Math.PI/360));
+const K = W / (B.lonMax - B.lonMin);
+const H = Math.round((mercY(B.latMax) - mercY(B.latMin)) * 180/Math.PI * K);
+const proj = (lon, lat) => [ (lon - B.lonMin) * K, (mercY(B.latMax) - mercY(lat)) * 180/Math.PI * K ];
+const svg = $('v-map');
+svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+const NS = 'http://www.w3.org/2000/svg';
+const el = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+
+const gBase = el('g', {}, svg);
+const gPins = el('g', {}, svg);
+
+for (let lon = 20; lon <= 29; lon++){ const [x] = proj(lon, 38); el('line', { x1:x, x2:x, y1:0, y2:H, class:'grid-line' }, gBase); }
+for (let lat = 35; lat <= 42; lat++){ const [,y] = proj(24, lat); el('line', { x1:0, x2:W, y1:y, y2:y, class:'grid-line' }, gBase); }
+
+function drawCountries(){
+  const topo = window.Datamap && Datamap.prototype && Datamap.prototype.worldTopo;
+  if (!topo || !topo.objects) return false;
+  const obj = topo.objects.world || topo.objects[Object.keys(topo.objects)[0]];
+  const tf = topo.transform;
+  const arcs = topo.arcs.map(arc => {
+    let x = 0, y = 0;
+    return arc.map(p => {
+      if (tf){ x += p[0]; y += p[1]; return [x * tf.scale[0] + tf.translate[0], y * tf.scale[1] + tf.translate[1]]; }
+      return p;
+    });
+  });
+  const ring = idxs => {
+    const pts = [];
+    idxs.forEach(i => {
+      let a = i < 0 ? arcs[~i].slice().reverse() : arcs[i];
+      a.forEach((p, k) => { if (k > 0 || pts.length === 0) pts.push(p); });
+    });
+    return pts;
+  };
+  const near = ['GRC','ALB','MKD','BGR','TUR','CYP','SRB','MNE','ITA','KOS','-99'];
+  obj.geometries.forEach(g => {
+    if (!near.includes(g.id) && !(g.properties && /Greece|Albania|Macedonia|Bulgaria|Turkey|Cyprus/.test(g.properties.name||''))) return;
+    const polys = g.type === 'Polygon' ? [g.arcs] : g.type === 'MultiPolygon' ? g.arcs : [];
+    let d = '';
+    polys.forEach(poly => poly.forEach(r => {
+      const pts = ring(r);
+      if (!pts.some(([lon, lat]) => lon > B.lonMin - 3 && lon < B.lonMax + 3 && lat > B.latMin - 3 && lat < B.latMax + 3)) return;
+      d += 'M' + pts.map(([lon, lat]) => proj(lon, lat).map(v => v.toFixed(1)).join(',')).join('L') + 'Z';
+    }));
+    if (d) el('path', { d, class: 'country' + (g.id === 'GRC' ? ' gr' : '') }, gBase);
+  });
+  return true;
+}
+try { drawCountries(); } catch(e) { /* graticule-only fallback */ }
+[['Ionian Sea', 19.4, 37.3], ['Aegean Sea', 25.0, 38.9], ['Sea of Crete', 24.2, 35.95]].forEach(([t, lon, lat]) => {
+  const [x, y] = proj(lon, lat); const s = el('text', { x, y, class:'sea-label' }, gBase); s.textContent = t;
+});
+
+function renderPins(q){
+  gPins.innerHTML = '';
+  Object.entries(CITIES).forEach(([city, c]) => {
+    const all = VENUES.filter(v => v.city === city).length;
+    if (!all) return;
+    const n = VENUES.filter(v => v.city === city && matches(v, q, true)).length;
+    const [x, y] = proj(c.lng, c.lat);
+    const g = el('g', { class: 'pin' + (activeCity === city ? ' active' : '') + (n === 0 ? ' dim' : ''), tabindex: n ? 0 : -1, role: 'button', 'aria-label': `${city}: ${n} matching` }, gPins);
+    const r = 9 + Math.sqrt(n) * 3.2;
+    el('circle', { cx:x, cy:y, r: r + 6, class:'halo' }, g);
+    el('circle', { cx:x, cy:y, r, class:'core' }, g);
+    const t = el('text', { x, y, class:'count' }, g); t.textContent = n;
+    const pos = {
+      r: { x: x + r + 9, y: y + 4, a: 'start' },
+      l: { x: x - r - 9, y: y + 4, a: 'end' },
+      a: { x, y: y - r - 11, a: 'middle' },
+      b: { x, y: y + r + 20, a: 'middle' }
+    }[c.lbl || 'r'];
+    const lbl = el('text', { x: pos.x, y: pos.y, class:'city', 'text-anchor': pos.a }, g); lbl.textContent = city;
+    const act = () => { if (!n) return; activeCity = activeCity === city ? null : city; update(); };
+    g.addEventListener('click', act);
+    g.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); act(); } });
+  });
+}
+
+function update(){
+  const q = $('v-search').value.trim().toLowerCase();
+  renderChips();
+  renderPins(q);
+  const list = VENUES.filter(v => matches(v, q, false));
+  list.sort((a, b) => (isNew(b) - isNew(a)));
+  renderCards(list, q);
+}
+
+$('v-search').addEventListener('input', update);
+$('v-clearCity').addEventListener('click', () => { activeCity = null; update(); });
+$('v-count').textContent = 'Loading venues…';
+load(0);
+})();
+</script>
